@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
   return (
     <div className=" bg-white text-black mx-auto font-serif p-5 lg:p-20 flex flex-col gap-2">
       <h1 className="text-5xl">Privacy Policy</h1>
-      <p>Effective Date: August 20, 2025</p>
+      <p>Effective Date: September 14, 2025</p>
 
       <p>
         Theater ("we", "our", or "us") respects your privacy. This Privacy
@@ -13,15 +13,7 @@ const PrivacyPolicy = () => {
       </p>
 
       <h2 className="text-2xl mt-5">1. Information We Collect</h2>
-      <p>
-        We do not collect any personal information directly. However, we may
-        collect anonymous usage data such as:
-      </p>
-      <ul>
-        <li>Device type and OS version</li>
-        <li>App version and settings</li>
-        <li>Anonymous app interaction data</li>
-      </ul>
+      <p>We do not collect any personal information directly.</p>
 
       <h2 className="text-2xl mt-5">2. Third-Party Services</h2>
       <p>
@@ -34,10 +26,6 @@ const PrivacyPolicy = () => {
         </li>
         <li>
           <strong>Gemini AI</strong> – to provide online AI responses
-        </li>
-        <li>
-          <strong>Analytics tools</strong> (e.g., Firebase Analytics) – for app
-          improvement
         </li>
       </ul>
       <p>Please refer to their privacy policies for more details.</p>
