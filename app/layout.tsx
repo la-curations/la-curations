@@ -15,6 +15,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LA Curations",
   description: "Apps curated by LA Curations",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon.ico",
+  },
+  openGraph: {
+    title: "LA Curations",
+    description: "Apps curated by LA Curations",
+    url: "https://lacurations.com",
+  },
 };
 
 export default function RootLayout({
