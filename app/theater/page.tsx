@@ -1,6 +1,7 @@
-import Header from "@/components/theater/Header";
 import Hero from "@/components/theater/Hero";
 import { Metadata } from "next";
+import Features from "@/components/theater/Features";
+import CTA from "@/components/theater/CTA";
 
 export const metadata: Metadata = {
   title: "Theater",
@@ -40,20 +41,10 @@ export const metadata: Metadata = {
 export default function Theater() {
   return (
     <>
-      <Header />
       <main className="overflow-x-hidden">
         <Hero />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl py-12 sm:py-16">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Coming Soon!
-            </h2>
-            <p className="mt-4 text-gray-500">
-              We are working hard to bring you Theater, an AI-powered smarter
-              streaming experience. Stay tuned for updates!
-            </p>
-          </div>
-        </div>
+        <Features />
+        <CTA />
       </main>
     </>
   );
