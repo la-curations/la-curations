@@ -1,7 +1,14 @@
 import Hero from "@/components/theater/Hero";
+import PersonalizedCinemaCompanion from "@/components/theater/PersonalizedCinemaCompanion";
+import AIFeatures from "@/components/theater/AIFeatures";
+import AndMore from "@/components/theater/AndMore";
+import MyFilters from "@/components/theater/MyFilters";
+import MySpace from "@/components/theater/MySpace";
+import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
+import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
+import Footer from "@/components/theater/Footer";
 import { Metadata } from "next";
-import Features from "@/components/theater/Features";
-import CTA from "@/components/theater/CTA";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Theater",
@@ -41,10 +48,24 @@ export const metadata: Metadata = {
 export default function Theater() {
   return (
     <>
-      <main className="overflow-x-hidden">
+      <Image
+        src="/theater64.png"
+        alt="Personalized Cinema Companion"
+        width={70}
+        height={70}
+        className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px] object-contain absolute top-8 left-8 z-10"
+      />
+      <main className="relative overflow-x-hidden bg-[#000013]">
         <Hero />
-        <Features />
-        <CTA />
+        <PersonalizedCinemaCompanion />
+        <AIFeatures />
+        <AndMore />
+        <MyFilters />
+        {/* <MySpace /> */}
+        <MultiDeviceExperience />
+        <ExperienceTheaterNow />
+        <Footer />
+        <div className="bg-gradient-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
       </main>
     </>
   );
