@@ -8,14 +8,9 @@ import Footer from "@/components/site/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="overflow-x-hidden">
         <HomeHero />
-        <ValueProps />
-        <AppShowcase />
-        <Newsletter />
       </main>
-      <Footer />
     </>
   );
 }
