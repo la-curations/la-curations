@@ -33,23 +33,23 @@ const ValueProps = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto mb-20 text-center">
           <div className="relative">
-            <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6">
+            <h2 className="text-4xl font-black tracking-tight">
               Crafted with care. Powered by trust.
             </h2>
             <div className="absolute inset-y-0 right-0 w-[50%] h-[calc(100%+20px)] bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
           </div>
-          <p className="lg:text-md text-xs text-gray-500 font-light leading-tight mt-10">
+          <p className="lg:text-md text-xs text-gray-500 font-light leading-tight mt-5 max-w-[80%] mx-auto">
             LA Curations believe in a different kind of internet. One where you
             aren't the product. LA Curations builds premium, privacy-focused
             products designed for peace of mind.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto">
           {valueProps.map((vp) => (
             <div
               key={vp.key}
-              className="flex flex-col items-center lg:items-start group"
+              className="max-w-[80%] md:max-w-[40%] lg:max-w-[25%] flex flex-col items-center lg:items-start group"
             >
               <div className="mb-6 p-4 rounded-2xl bg-gray-100 group-hover:bg-black transition-colors duration-300">
                 <Image

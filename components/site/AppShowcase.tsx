@@ -7,7 +7,7 @@ const AppShowcase = () => {
     <>
       {/* <div className="w-screen mt-56 h-[100px] bg-gradient-to-b from-white to-[#000013]"></div> */}
       <div className="w-screen relative flex flex-col items-center justify-center">
-        <p className="text-5xl text-center lg:text-[128px] font-black text-[#6767674a]">
+        <p className="text-5xl md:text-7xl lg:text-[128px] text-center font-black text-[#6767674a]">
           INTRODUCING
         </p>
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
@@ -15,7 +15,7 @@ const AppShowcase = () => {
       <a
         href="/theater"
         id="showcase"
-        className="relative max-w-[90%] lg:max-w-7xl mx-auto lg:py-56 py-12 my-12 bg-[#000013] flex flex-col items-center justify-center rounded-[20px] lg:rounded-[40px]"
+        className="relative max-w-[90%] mx-auto lg:py-56 md:py-24 py-12 my-12 bg-[#000013] flex flex-col items-center justify-center rounded-[20px] lg:rounded-[40px]"
       >
         <img
           src="/assets/images/LA/curve.png"

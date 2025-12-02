@@ -7,15 +7,15 @@ const Founder = () => {
   return (
     <div className="my-56 mb-32 lg:mb-96 bg-white text-black">
       <div className="w-screen relative flex flex-col items-center justify-center">
-        <p className="text-4xl text-center lg:text-[110px] font-black text-[#6767674a]">
+        <p className="text-4xl md:text-6xl lg:text-[110px] font-black text-[#6767674a]">
           Handcrafted by One
         </p>
-        <div className="absolute inset-x-0 -bottom-3 xl:h-64 lg:h-48 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+        <div className="absolute inset-x-0 -bottom-3 lg:h-64 md:h-32 h-24 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
       </div>
       <div className="container mx-auto px-4">
         <div className="xl:-mt-12 lg:-mt-12 -mt-5 mb-20 text-center">
           <div className="relative">
-            <h2 className="text-lg md:text-5xl font-black tracking-tight mb-6">
+            <h2 className="text-lg md:text-3xl xl:text-5xl mx-5 font-black tracking-tight mb-6">
               Independently made. Deliberately crafted.
             </h2>
           </div>
