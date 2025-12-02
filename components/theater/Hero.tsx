@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import theaterTitle from "../../public/theater-title.png";
-import la from "../../public/la-theater64.png";
-import theater from "../../public/theater64.png";
 
 const Hero = () => {
   return (

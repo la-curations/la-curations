@@ -1,57 +1,52 @@
 import Image from "next/image";
 import Link from "next/link";
+import theaterTitle from "../../public/theater-title.png";
 
 const AppShowcase = () => {
   return (
-    <section id="showcase" className="py-12 lg:py-16 scroll-mt-28">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="font-black text-3xl md:text-4xl bg-gradient-to-r from-[#9500ffe5] to-[#ff00aeed] text-transparent bg-clip-text">
-              Theater: Discover Content That Fits You.
-            </h2>
-            <p className="mt-4 text-gray-300 text-base md:text-lg">
-              Tired of endless scrolling? Theater is the modern, intelligent
-              cinema companion that uses the power of AI to connect you with the
-              perfect movie or series every time.
-            </p>
-            <p className="mt-2 text-gray-400 text-sm md:text-base">
-              Find what to watch, not just what's trending.
-            </p>
-            <div className="mt-6 flex flex-wrap items-center gap-3">
-              <Link
-                href="/theater"
-                className="rounded-xl bg-white text-[#0b0019] px-5 py-2.5 text-sm font-semibold hover:bg-white/90 transition"
-              >
-                Open Theater
-              </Link>
-              <a
-                href="#features"
-                className="rounded-xl border border-white/10 px-5 py-2.5 text-sm font-semibold text-white/90 hover:bg-white/5 transition"
-              >
-                See features
-              </a>
-            </div>
-          </div>
-
-          {/* Visual */}
-          <div>
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-2">
-              {/* If you add a demo video, place it under public/videos/theater-showcase.mp4 and swap the Image for a <video> element. */}
-              {/* Example: <video src="/videos/theater-showcase.mp4" className="w-full rounded-2xl" autoPlay loop muted playsInline /> */}
-              <Image
-                src="/assets/images/theater/Detail.png"
-                alt="Theater app showcase"
-                width={1280}
-                height={800}
-                className="w-full rounded-2xl"
-                priority
-              />
-            </div>
-          </div>
-        </div>
+    <>
+      {/* <div className="w-screen mt-56 h-[100px] bg-gradient-to-b from-white to-[#000013]"></div> */}
+      <div className="w-screen relative flex flex-col items-center justify-center">
+        <p className="text-5xl text-center lg:text-[128px] font-black text-[#6767674a]">
+          INTRODUCING
+        </p>
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
       </div>
-    </section>
+      <a
+        href="/theater"
+        id="showcase"
+        className="relative max-w-[90%] lg:max-w-7xl mx-auto lg:py-56 py-12 my-12 bg-[#000013] flex flex-col items-center justify-center rounded-[20px] lg:rounded-[40px]"
+      >
+        <img
+          src="/assets/images/LA/curve.png"
+          alt="Curve"
+          className="absolute top-0 w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain"
+        />
+        <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full">
+          <Image
+            src={theaterTitle}
+            alt="Theater Hero"
+            className="object-contain w-[70%] lg:w-[50%]"
+          />
+          <p className="text-sm lg:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#306bff] to-[#ff16d0]">
+            AI-Powered Smarter Streaming
+          </p>
+        </div>
+        <img
+          src="/assets/images/LA/curve.png"
+          alt="Curve"
+          className="absolute bottom-0 w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain rotate-180"
+        />
+      </a>
+      {/* <div className="w-screen h-[500px] bg-gradient-to-b from-[#000013] to-transparent"></div> */}
+      {/* <div className="flex items-center justify-center -mt-10">
+        <img
+          src="/assets/images/LA/arc.png"
+          alt="Arc"
+          className="object-contain w-[25%]"
+        />
+      </div> */}
+    </>
   );
 };
 
