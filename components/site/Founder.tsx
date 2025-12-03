@@ -5,7 +5,7 @@ const waterfall = Waterfall({ weight: "400" });
 
 const Founder = () => {
   return (
-    <div className="my-56 mb-32 lg:mb-56 bg-white text-black">
+    <div className="my-32 lg:my-56 bg-white text-black">
       <div className="w-screen relative flex flex-col items-center justify-center">
         <p className="text-4xl md:text-6xl lg:text-[110px] font-black text-[#6767674a]">
           Handcrafted by One
@@ -49,12 +49,12 @@ const Founder = () => {
             href="https://instagram.com/leoantony2002"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -71,12 +71,12 @@ const Founder = () => {
           {/* Email */}
           <a
             href="mailto:leoantony20025@gmail.com"
-            className="w-10 h-10 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -94,12 +94,12 @@ const Founder = () => {
             href="https://linkedin.com/in/leo-antony"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

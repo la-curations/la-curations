@@ -38,14 +38,12 @@ const AppShowcase = () => {
           className="absolute -bottom-[1px] w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain rotate-180"
         />
       </a>
-      {/* <div className="w-screen h-[500px] bg-gradient-to-b from-[#000013] to-transparent"></div> */}
-      {/* <div className="flex items-center justify-center -mt-10">
-        <img
-          src="/assets/images/LA/arc.png"
-          alt="Arc"
-          className="object-contain w-[25%]"
-        />
-      </div> */}
+      <Link
+        href="/theater"
+        className="mx-auto max-w-max lg:hidden px-6 py-3 text-xs bg-gradient-to-r from-[#b162ff] to-[#ff16d0] text-white flex items-center justify-center rounded-[100px]"
+      >
+        Experience Now
+      </Link>
     </>
   );
 };

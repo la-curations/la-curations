@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LA Curations",
     description: "Apps curated by LA Curations",
-    url: "https://lacurations.com",
+    url: "https://lacurations.vercel.app",
   },
 };
 
