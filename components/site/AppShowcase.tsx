@@ -20,7 +20,7 @@ const AppShowcase = () => {
         <img
           src="/assets/images/LA/curve.png"
           alt="Curve"
-          className="absolute top-0 w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain"
+          className="absolute -top-[1px] w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain"
         />
         <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full">
           <Image
@@ -35,7 +35,7 @@ const AppShowcase = () => {
         <img
           src="/assets/images/LA/curve.png"
           alt="Curve"
-          className="absolute bottom-0 w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain rotate-180"
+          className="absolute -bottom-[1px] w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain rotate-180"
         />
       </a>
       {/* <div className="w-screen h-[500px] bg-gradient-to-b from-[#000013] to-transparent"></div> */}
