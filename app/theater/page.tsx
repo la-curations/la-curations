@@ -6,7 +6,7 @@ import MyFilters from "@/components/theater/MyFilters";
 import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
 import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
 import Footer from "@/components/theater/Footer";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -55,11 +55,15 @@ export const metadata: Metadata = {
       "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
     ],
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: {
     index: true,
     follow: true,
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function Theater() {
