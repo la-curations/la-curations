@@ -7,16 +7,16 @@ import HomeHero from "@/components/site/HomeHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "LA Curations - Top Curated Apps & Software Reviews",
+  title: "LA Curations - Curated for you",
   description:
-    "We curate the best apps for productivity, design, and entertainment. Discover high-quality software recommendations from LA Curations.",
+    "We build and curate high-quality software for productivity and design. Explore our latest apps like Theater. Curated for you.",
   keywords: [
     "LA Curations",
-    "best productivity apps",
-    "curated software",
-    "app reviews",
+    "independent developer",
+    "software studio",
+    "Theater App",
+    "premium software",
     "design tools",
-    "software recommendations",
   ],
   alternates: {
     canonical: "https://lacurations.vercel.app",
@@ -35,7 +35,7 @@ export default function Home() {
       // Add other social profiles here
     ],
     description:
-      "Curating the finest applications and software for productivity and creativity.",
+      "Independent software studio acting as a portfolio for premium applications and digital products.",
   };
 
   return (

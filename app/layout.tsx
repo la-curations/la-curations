@@ -11,17 +11,18 @@ const geologica = Geologica({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lacurations.vercel.app"),
   title: {
-    default: "LA Curations - Curated Apps & Software Reviews",
+    default: "LA Curations - Curated for you",
     template: "%s | LA Curations",
   },
   description:
-    "Discover the best apps and software curated by LA Curations. Honest reviews and hand-picked recommendations for productivity and entertainment.",
+    "Independent software studio building premium apps for tailored experiences. LA Curations creates high-quality apps and softwares.",
   keywords: [
-    "best apps",
-    "software reviews",
-    "curated apps",
-    "productivity tools",
+    "independent developer",
+    "software studio",
+    "premium apps",
+    "Theater App",
     "LA Curations",
+    "productivity tools",
   ],
   authors: [{ name: "LA Curations" }],
   icons: {
@@ -31,17 +32,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "LA Curations",
-    description: "Apps curated by LA Curations",
+    description: "Curated for you",
     url: "https://lacurations.vercel.app",
     siteName: "LA Curations",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/logo512.png",
+        width: 512,
+        height: 512,
+        alt: "LA Curations Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "LA Curations",
-    description: "Apps curated by LA Curations",
+    description: "Curated for you",
     creator: "@lacurations", // Placeholder, useful if you have a handle
+    images: ["/logo512.png"],
   },
 };
 
