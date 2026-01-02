@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import theaterTitle from "../../public/theater-title.png";
+import theaterTitle from "../../public/assets/images/theater/theater-title.png";
 import { Waterfall } from "next/font/google";
 
 const waterFall = Waterfall({
@@ -20,11 +20,14 @@ const Hero = () => {
         >
           Discover cinema like never before
         </p>
-        <Image
-          src={theaterTitle}
-          alt="Theater Hero"
-          className="object-contain w-[90%] lg:w-[50%]"
-        />
+        <h1 className="w-full flex justify-center">
+          <Image
+            src={theaterTitle}
+            alt="Theater App"
+            className="object-contain w-[90%] lg:w-[50%]"
+            priority
+          />
+        </h1>
         <p className="text-xl lg:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#306bff] to-[#ff16d0]">
           AI-Powered Smarter Streaming
         </p>

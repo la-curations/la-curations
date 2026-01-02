@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import theaterTitle from "../../public/theater-title.png";
 
 const AppShowcase = () => {
   return (
@@ -24,7 +23,7 @@ const AppShowcase = () => {
         />
         <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full">
           <Image
-            src={theaterTitle}
+            src="/assets/images/theater/theater-title.png"
             alt="Theater Hero"
             className="object-contain w-[70%] lg:w-[50%]"
           />

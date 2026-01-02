@@ -13,16 +13,16 @@ const Footer = () => {
 
       <div className="flex items-center justify-center gap-8 lg:p-20 pt-10">
         <Link
-          href="/privacy"
+          href="/terms-of-use"
           className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
         >
-          Privacy
+          Terms of Use
         </Link>
         <Link
-          href="/terms"
+          href="/privacy-policy"
           className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
         >
-          Terms
+          Privacy Policy
         </Link>
         <a
           href="mailto:la.curations@gmail.com"

@@ -18,21 +18,14 @@ const Footer = () => {
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm lg:text-base text-white/60">
             <Link
-              href="/terms"
-              className="hover:text-white/80 transition-colors"
-            >
-              Terms of Use
-            </Link>
-            <span>|</span>
-            <Link
-              href="/privacy"
+              href="/theater/privacy-policy"
               className="hover:text-white/80 transition-colors"
             >
               Privacy Policy
             </Link>
             <span>|</span>
             <Link href="/" className="hover:text-white/80 transition-colors">
-              LA Curation
+              LA Curations
             </Link>
           </div>
         </div>

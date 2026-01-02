@@ -3,7 +3,6 @@ import PersonalizedCinemaCompanion from "@/components/theater/PersonalizedCinema
 import AIFeatures from "@/components/theater/AIFeatures";
 import AndMore from "@/components/theater/AndMore";
 import MyFilters from "@/components/theater/MyFilters";
-import MySpace from "@/components/theater/MySpace";
 import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
 import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
 import Footer from "@/components/theater/Footer";
@@ -11,33 +10,51 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Theater",
-  description: "AI-powered Smarter Streaming.",
+  title: "Theater App - The Ultimate AI Movie & TV Tracker | LA Curations",
+  description:
+    "Theater App by LA Curations serves as your personalized cinema companion. AI-powered recommendations for smarter streaming on all your devices.",
+  keywords: [
+    "Theater App",
+    "AI streaming",
+    "movie recommendations",
+    "smart streaming",
+    "cinema companion",
+    "LA Curations Theater",
+    "movie tracker",
+    "TV show tracker",
+    "streaming guide",
+    "personal watchlist",
+  ],
+  alternates: {
+    canonical: "https://lacurations.vercel.app/theater",
+  },
   icons: {
-    icon: "/theater64.png",
-    apple: "/theater64.png",
-    shortcut: "/theater64.png",
+    icon: "/assets/images/theater/theater64.png",
+    apple: "/assets/images/theater/theater64.png",
+    shortcut: "/assets/images/theater/theater64.png",
   },
   openGraph: {
-    title: "Theater",
-    description: "AI-powered Smarter Streaming.",
-    url: "https://lacurations.com/theater",
+    title: "Theater App - The Ultimate AI Movie & TV Tracker",
+    description:
+      "Experience the next level of streaming with Theater App. AI-curated content just for you.",
+    url: "https://lacurations.vercel.app/theater",
     images: [
       {
-        url: "https://lacurations.com/images/theater-og-image.jpg",
+        url: "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
         width: 1200,
         height: 630,
-        alt: "Theater - AI-powered Smarter Streaming",
+        alt: "Theater App - AI-Powered Smarter Streaming",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theater",
-    description: "AI-powered Smarter Streaming.",
-    images: ["https://lacurations.com/images/theater-twitter-image.jpg"],
+    title: "Theater App - The Ultimate AI Movie & TV Tracker",
+    description: "Your personalized AI cinema companion.",
+    images: [
+      "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
+    ],
   },
-
   viewport: "width=device-width, initial-scale=1",
   robots: {
     index: true,
@@ -46,10 +63,38 @@ export const metadata: Metadata = {
 };
 
 export default function Theater() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Theater",
+    operatingSystem: "Web, iOS, Android",
+    applicationCategory: "EntertainmentApplication",
+    applicationSubCategory: "Movie & TV Tracker",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    description:
+      "AI-powered smarter streaming application acting as your personalized cinema companion.",
+    featureList:
+      "AI Recommendations, Cross-platform Sync, Watchlist Management",
+    screenshot: "/assets/images/theater/theater-og-image.png",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      ratingCount: "120",
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Image
-        src="/theater64.png"
+        src="/assets/images/theater/theater64.png"
         alt="Personalized Cinema Companion"
         width={70}
         height={70}

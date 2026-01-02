@@ -46,7 +46,7 @@ const HomeHero = () => {
       <div className="absolute right-0 bottom-0 lg:top-0 w-1/2 md:w-2/5 flex items-center justify-end z-10">
         <div className="relative w-full h-[60%] flex items-center justify-end">
           <Image
-            src="/hero.png"
+            src="/assets/images/LA/hero.png"
             alt="Hero"
             width={800}
             height={800}
