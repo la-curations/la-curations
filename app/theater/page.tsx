@@ -10,7 +10,7 @@ import { Metadata, Viewport } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Theater by LA Curations - The Ultimate AI Movie & TV Tracker",
+  title: "Theater",
   description:
     "Theater App by LA Curations serves as your personalized cinema companion. AI-powered recommendations for smarter streaming on all your devices.",
   keywords: [
