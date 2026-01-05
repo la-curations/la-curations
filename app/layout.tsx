@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     default: "LA Curations - Curated for you",
     template: "%s | LA Curations",
   },
+  manifest: "/manifest.json",
   description:
     "Independent software studio building premium apps for tailored experiences. LA Curations creates high-quality apps and softwares.",
   keywords: [

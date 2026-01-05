@@ -23,7 +23,7 @@ const Hero = () => {
         <h1 className="w-full flex justify-center">
           <Image
             src={theaterTitle}
-            alt="Theater App"
+            alt="Theater by LA Curations - AI Movie & TV Tracker"
             className="object-contain w-[90%] lg:w-[50%]"
             priority
           />

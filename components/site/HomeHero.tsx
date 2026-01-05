@@ -20,7 +20,7 @@ const HomeHero = () => {
           <div className="relative">
             {/* Centered text */}
             <h1 className="text-6xl md:text-7xl lg:text-8xl text-center font-black text-[#96999d] tracking-tight">
-              CURATED FOR YOU
+              <span className="sr-only">LA Curations - </span>CURATED FOR YOU
             </h1>
 
             {/* Gradient overlays for the "emerging from nowhere" effect */}

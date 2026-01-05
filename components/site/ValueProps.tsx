@@ -39,7 +39,7 @@ const ValueProps = () => {
             <div className="absolute inset-y-0 right-0 w-[50%] h-[calc(100%+20px)] bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
           </div>
           <p className="lg:text-md text-xs text-gray-500 font-light leading-tight mt-5 max-w-[80%] mx-auto">
-            LA Curations believe in a different kind of internet. One where you
+            LA Curations believes in a different kind of internet. One where you
             aren't the product. LA Curations builds premium, privacy-focused
             products designed for peace of mind.
           </p>

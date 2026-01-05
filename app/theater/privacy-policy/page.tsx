@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Theater App",
+  description: "Privacy Policy for Theater App by LA Curations.",
+};
+
 const PrivacyPolicy = () => {
   return (
     <div className=" bg-white text-black mx-auto font-serif p-5 lg:p-20 flex flex-col gap-2">

@@ -9,7 +9,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "LA Curations - Curated for you",
   description:
-    "We build and curate high-quality software for productivity and design. Explore our latest apps like Theater. Curated for you.",
+    "We build and curate high-quality software for productivity and design. Explore the new release of Theater App.",
   keywords: [
     "LA Curations",
     "independent developer",
@@ -31,7 +31,10 @@ export default function Home() {
     url: "https://lacurations.vercel.app",
     logo: "https://lacurations.vercel.app/logo.png",
     sameAs: [
-      "https://twitter.com/lacurations",
+      "https://x.com/la_curations",
+      "https://instagram.com/la_curations",
+      "https://reddit.com/r/la_curations",
+      // "https://youtube.com/@la_curations",
       // Add other social profiles here
     ],
     description:
