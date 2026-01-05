@@ -16,13 +16,15 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   description:
-    "Independent software studio building premium apps for tailored experiences. LA Curations creates high-quality apps and softwares.",
+    "LA Curations is an independent studio crafting premium, privacy-focused mobile apps. Experience ad-free apps like 'Theater' designed with a clean UI/UX and zero data collection.",
   keywords: [
+    "LA Curations",
+    "Theater App",
     "independent developer",
     "software studio",
     "premium apps",
-    "Theater App",
-    "LA Curations",
+    "Privacy focused apps",
+    "Ad-free cinema guide",
     "productivity tools",
   ],
   authors: [{ name: "LA Curations" }],
@@ -36,7 +38,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "LA Curations",
-    description: "Curated for you",
+    description:
+      "Beautifully crafted, ad-free mobile experiences. No tracking, just pure design.",
     url: "https://lacurations.vercel.app",
     siteName: "LA Curations",
     locale: "en_US",
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LA Curations",
     description: "Curated for you",
-    creator: "@lacurations", // Placeholder, useful if you have a handle
+    creator: "@la_curations", // Placeholder, useful if you have a handle
     images: ["/logo512.png"],
   },
 };

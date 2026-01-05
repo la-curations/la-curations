@@ -16,15 +16,18 @@ export const metadata: Metadata = {
   keywords: [
     "Theater by LA Curations",
     "Theater App",
-    "AI streaming",
-    "movie recommendations",
-    "smart streaming",
-    "cinema companion",
+    "AI curated streaming",
+    "AI recommendations",
     "LA Curations Theater",
     "movie tracker",
     "TV show tracker",
     "streaming guide",
     "personal watchlist",
+    "smart streaming",
+    "cinema companion",
+    "Ad-free app",
+    "privacy-focused app",
+    "premium app",
   ],
   alternates: {
     canonical: "https://lacurations.vercel.app/theater",
@@ -35,9 +38,9 @@ export const metadata: Metadata = {
     shortcut: "/assets/images/theater/theater64.png",
   },
   openGraph: {
-    title: "Theater App - The Ultimate AI Movie & TV Tracker",
+    title: "Theater App",
     description:
-      "Experience the next level of streaming with Theater App. AI-curated content just for you.",
+      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
     url: "https://lacurations.vercel.app/theater",
     images: [
       {
@@ -50,8 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theater App - The Ultimate AI Movie & TV Tracker",
-    description: "Your personalized AI cinema companion.",
+    title: "Theater App",
+    description:
+      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
     images: [
       "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
     ],
@@ -75,21 +79,11 @@ export default function Theater() {
     operatingSystem: "Web, iOS, Android",
     applicationCategory: "EntertainmentApplication",
     applicationSubCategory: "Movie & TV Tracker",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
     description:
-      "AI-powered smarter streaming application acting as your personalized cinema companion.",
+      "No ads. No tracking. No data collection. Enjoy the next level of streaming with Theater App. AI-curated content just for you.",
     featureList:
       "AI Recommendations, Cross-platform Sync, Watchlist Management",
     screenshot: "/assets/images/theater/theater-og-image.png",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      ratingCount: "120",
-    },
   };
 
   return (
