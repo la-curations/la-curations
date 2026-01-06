@@ -50,6 +50,7 @@ const Founder = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            aria-label="Leo Antony's Instagram"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +73,7 @@ const Founder = () => {
           <a
             href="mailto:leoantony20025@gmail.com"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            aria-label="Email Leo Antony"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +97,7 @@ const Founder = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            aria-label="Leo Antony's LinkedIn"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

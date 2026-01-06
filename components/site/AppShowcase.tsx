@@ -15,6 +15,7 @@ const AppShowcase = () => {
         href="/theater"
         id="showcase"
         className="relative max-w-[90%] mx-auto lg:py-56 md:py-24 py-12 my-12 bg-[#000013] flex flex-col items-center justify-center rounded-[20px] lg:rounded-[40px]"
+        aria-label="View Theater App - AI-Powered Smarter Streaming"
       >
         <img
           src="/assets/images/LA/curve.png"
