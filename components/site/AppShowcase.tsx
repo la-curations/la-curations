@@ -22,9 +22,11 @@ const AppShowcase = () => {
           className="absolute -top-[1px] w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain"
         />
         <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full">
-          <img
+          <Image
             src="/assets/images/theater/theater-title.png"
             alt="Theater by LA Curations"
+            width={800}
+            height={200}
             className="object-contain w-[70%] lg:w-[50%]"
           />
           <p className="text-sm lg:text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#306bff] to-[#ff16d0]">

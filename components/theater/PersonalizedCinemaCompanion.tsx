@@ -15,9 +15,11 @@ const PersonalizedCinemaCompanion = () => {
               height={500}
               className="w-full h-auto object-contain absolute -top-[30%] z-0"
             />
-            <img
+            <Image
               src="/assets/images/theater/pcc.png"
               alt="Personalized Cinema Companion"
+              width={500}
+              height={500}
               className="w-[80%] lg:w-full h-auto object-contain relative z-10 mx-auto"
             />
           </div>

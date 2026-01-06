@@ -86,11 +86,34 @@ export default function Theater() {
     screenshot: "/assets/images/theater/theater-og-image.png",
   };
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://lacurations.vercel.app",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Theater",
+        item: "https://lacurations.vercel.app/theater",
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <Image
         src="/assets/images/theater/theater64.png"
@@ -98,6 +121,7 @@ export default function Theater() {
         width={70}
         height={70}
         className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px] object-contain absolute top-8 left-8 z-10"
+        priority
       />
       <main className="relative overflow-x-hidden bg-[#000013]">
         <Hero />

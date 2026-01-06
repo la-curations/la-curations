@@ -13,7 +13,7 @@ const waterFall = Waterfall({
 
 const Hero = () => {
   return (
-    <section className="w-screen h-screen bg-[url('/theater-hero.png')] bg-cover bg-center bg-no-repeat">
+    <section className="w-screen h-screen bg-[url('/assets/images/theater/theater-hero.png')] bg-cover bg-center bg-no-repeat">
       <div className="flex flex-col gap-6 text-center items-center justify-center h-full">
         <p
           className={`${waterFall.className} text-4xl lg:text-6xl leading-[1.2] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8aabff] to-[#f863da]`}
