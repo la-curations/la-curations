@@ -84,11 +84,6 @@ export default function Theater() {
     featureList:
       "AI Recommendations, Cross-platform Sync, Watchlist Management",
     screenshot: "/assets/images/theater/theater-og-image.png",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      ratingCount: "120",
-    },
   };
 
   return (
