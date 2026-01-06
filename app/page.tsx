@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "Ad-free cinema guide",
     "productivity tools",
   ],
+  alternates: {
+    canonical: "https://lacurations.vercel.app",
+  },
   authors: [{ name: "LA Curations" }],
   icons: {
     icon: [
@@ -55,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LA Curations",
     description: "Curated for you",
-    creator: "@la_curations", // Placeholder, useful if you have a handle
+    creator: "@la_curations",
     images: ["/logo512.png"],
   },
 };

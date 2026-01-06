@@ -32,7 +32,7 @@ const ExperienceTheaterNow = () => {
 
           <span className="w-[1px] h-20 lg:h-30 bg-gradient-to-b from-transparent via-[#f863da] to-transparent"></span>
 
-          <p className="flex flex-col items-start italic text-white/30 font-light text-sm lg:text-xl">
+          <p className="flex flex-col items-start italic text-white/60 font-light text-sm lg:text-xl">
             <span>Soon</span>
             <span>on ios</span>
           </p>

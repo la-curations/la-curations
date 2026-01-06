@@ -83,7 +83,10 @@ const AIFeatures = () => {
         {/* Section heading */}
         <div className="text-center mb-16 flex flex-col items-center">
           <h2 className="relative mb-4 flex items-center justify-center">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#AA4EFF] to-[#FF5E87] opacity-20 font-black text-[55px] lg:text-[150px] z-0 relative">
+            <span
+              className="bg-clip-text text-transparent bg-gradient-to-r from-[#AA4EFF] to-[#FF5E87] opacity-20 font-black text-[55px] lg:text-[150px] z-0 relative"
+              aria-hidden="true"
+            >
               AI Features
             </span>
             <Image
@@ -159,7 +162,7 @@ const AIFeatures = () => {
                     <p className="text-2xl lg:text-4xl text-center lg:text-left font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-l from-[#ffffff18] to-white">
                       {item.title}
                     </p>
-                    <p className="text-lg text-center lg:text-left lg:text-2xl text-[#665996] leading-relaxed">
+                    <p className="text-lg text-center lg:text-left lg:text-2xl text-[#a5a1d2] leading-relaxed">
                       {item.description}
                     </p>
                   </div>

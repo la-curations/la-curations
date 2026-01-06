@@ -23,7 +23,7 @@ const MultiDeviceExperience = () => {
               <span>in multiple platforms</span>
             </h2>
             <div className="flex flex-col items-center justify-center mt-10">
-              <p className="text-lg italic lg:text-xl text-white/50 mb-4">
+              <p className="text-lg italic lg:text-xl text-white/60 mb-4">
                 compatible on
               </p>
               <p className="text-2xl lg:text-3xl font-semibold flex items-center justify-around w-[70%]">
