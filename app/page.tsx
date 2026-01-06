@@ -31,25 +31,36 @@ export const metadata: Metadata = {
   authors: [{ name: "LA Curations" }],
   icons: {
     icon: [
+      {
+        url: "/logo64.png",
+        sizes: "64x64 32x32 24x24 16x16",
+        type: "image/png",
+      },
       { url: "/logo512.png", sizes: "512x512", type: "image/png" },
       { url: "/favicon.ico" },
     ],
-    apple: [{ url: "/logo512.png", sizes: "512x512", type: "image/png" }],
-    shortcut: "/logo512.png",
+    apple: [
+      {
+        url: "/logo64.png",
+        sizes: "64x64 32x32 24x24 16x16",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/logo64.png",
   },
   openGraph: {
     title: "LA Curations",
     description:
-      "Beautifully crafted, ad-free mobile experiences. No tracking, just pure design.",
+      "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
     url: "https://lacurations.vercel.app",
     siteName: "LA Curations",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/logo512.png",
-        width: 512,
-        height: 512,
+        url: "https://lacurations.vercel.app/assets/images/theater/la-og-image.png",
+        width: 1200,
+        height: 630,
         alt: "LA Curations Logo",
       },
     ],
@@ -57,9 +68,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "LA Curations",
-    description: "Curated for you",
+    description:
+      "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
     creator: "@la_curations",
-    images: ["/logo512.png"],
+    images: [
+      "https://lacurations.vercel.app/assets/images/theater/la-og-image.png",
+    ],
   },
 };
 
