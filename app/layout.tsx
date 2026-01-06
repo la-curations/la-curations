@@ -15,7 +15,14 @@ export const metadata: Metadata = {
     template: "%s | LA Curations",
   },
   description:
-    "Independent software studio building premium apps for tailored experiences. LA Curations creates high-quality apps and softwares.",
+    "Independent software studio building premium apps for tailored experiences. LA Curations creates high-quality apps and software.",
+  applicationName: "LA Curations",
+  appleWebApp: {
+    title: "LA Curations",
+    statusBarStyle: "default",
+    capable: true,
+  },
+  manifest: "/manifest.json",
   keywords: [
     "independent developer",
     "software studio",
@@ -27,6 +34,7 @@ export const metadata: Metadata = {
   authors: [{ name: "LA Curations" }],
   icons: {
     icon: [
+      { url: "/logo64.png", sizes: "64x64 32x32", type: "image/png" },
       { url: "/logo512.png", sizes: "512x512", type: "image/png" },
       { url: "/favicon.ico" },
     ],
@@ -53,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LA Curations",
     description: "Curated for you",
-    creator: "@lacurations", // Placeholder, useful if you have a handle
+    creator: "@lacurations",
     images: ["/logo512.png"],
   },
 };
