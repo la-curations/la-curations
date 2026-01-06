@@ -14,31 +14,31 @@ const Footer = () => {
       <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 lg:p-20 pt-10 px-4">
         <Link
           href="/theater"
-          className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+          className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
         >
           Theater App
         </Link>
         <Link
           href="/terms-of-use"
-          className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+          className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
         >
           Terms of Use
         </Link>
         <Link
           href="/privacy-policy"
-          className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+          className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
         >
           Privacy Policy
         </Link>
         <a
           href="mailto:la.curations@gmail.com"
-          className="text-sm font-medium text-gray-500 hover:text-black transition-colors"
+          className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
         >
           Contact
         </a>
       </div>
 
-      <div className="text-xs lg:text-sm text-gray-400 lg:absolute lg:bottom-0 lg:right-0 lg:p-20 text-center pt-5 pb-10">
+      <div className="text-xs lg:text-sm text-gray-600 lg:absolute lg:bottom-0 lg:right-0 lg:p-20 text-center pt-5 pb-10">
         © {new Date().getFullYear()} LA Curations. All rights reserved.
       </div>
     </footer>

@@ -19,7 +19,7 @@ const Founder = () => {
               Independently made. Deliberately crafted.
             </h2>
           </div>
-          <p className="max-w-[70%] lg:max-w-4xl mx-auto text-xs text-gray-500 font-light leading-relaxed mt-5">
+          <p className="max-w-[70%] lg:max-w-4xl mx-auto text-xs text-gray-600 font-light leading-relaxed mt-5">
             Built by one. Crafted with care. Designed for a more considered
             digital experience.
           </p>
@@ -38,7 +38,7 @@ const Founder = () => {
           Everything under LA Curations is imagined, designed, and built by
         </p>
         <h1 className="text-4xl md:text-5xl font-black">LEO ANTONY</h1>
-        <p className="text-md text-gray-500 font-light leading-relaxed">
+        <p className="text-md text-gray-600 font-light leading-relaxed">
           Maker of LA Curations
         </p>
 
