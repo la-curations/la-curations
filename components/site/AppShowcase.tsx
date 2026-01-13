@@ -18,13 +18,13 @@ const AppShowcase = () => {
         aria-label="View Theater App - AI-Powered Smarter Streaming"
       >
         <img
-          src="/assets/images/LA/curve.png"
+          src="/assets/images/LA/curve.webp"
           alt="Curve"
           className="absolute -top-[1px] w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain"
         />
         <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full">
           <Image
-            src="/assets/images/theater/theater-title.png"
+            src="/assets/images/theater/theater-title.webp"
             alt="Theater by LA Curations"
             width={800}
             height={200}
@@ -35,7 +35,7 @@ const AppShowcase = () => {
           </p>
         </div>
         <img
-          src="/assets/images/LA/curve.png"
+          src="/assets/images/LA/curve.webp"
           alt="Curve"
           className="absolute -bottom-[1px] w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain rotate-180"
         />

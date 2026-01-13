@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import theaterAI from "../../public/assets/images/theater/TheaterAI.png";
+import theaterAI from "../../public/assets/images/theater/TheaterAI.webp";
 import { Freehand } from "next/font/google";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -16,13 +16,13 @@ const freehand = Freehand({
 
 const carouselItems = [
   {
-    image: "/assets/images/theater/AI1.png",
+    image: "/assets/images/theater/AI1.webp",
     title: "AI Search Mode",
     description:
       "Search with partial title, story you remember, or whatever. Get the Best Match and more.",
   },
   {
-    image: "/assets/images/theater/AI2.png",
+    image: "/assets/images/theater/AI2.webp",
     title: "My Next Watch",
     description: (
       <>
@@ -36,13 +36,13 @@ const carouselItems = [
     ),
   },
   {
-    image: "/assets/images/theater/AI3.png",
+    image: "/assets/images/theater/AI3.webp",
     title: "Watchlist Insights",
     description:
       "Get insights from all the watchlists in the app, find the hidden gems, discover the pattern and more.",
   },
   {
-    image: "/assets/images/theater/AI4.png",
+    image: "/assets/images/theater/AI4.webp",
     title: "AI Compare",
     description:
       "Compare all movies or series in your watchlists and get the Best Match and the reasons why.",
@@ -90,7 +90,7 @@ const AIFeatures = () => {
               AI Features
             </span>
             <Image
-              src="/assets/images/theater/mesh.png"
+              src="/assets/images/theater/mesh.webp"
               alt="Mesh"
               width={800}
               height={500}

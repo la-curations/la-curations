@@ -5,7 +5,7 @@ const ruthie = Ruthie({ weight: "400", subsets: ["latin"] });
 
 const socialLinks = [
   {
-    href: "https://instagram.com/la_curations",
+    href: "https://instagram.com/lacurations",
     label: "Instagram",
     icon: (
       <svg
@@ -26,7 +26,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://facebook.com/la_curations",
+    href: "https://facebook.com/lacurations",
     label: "Facebook",
     icon: (
       <svg
@@ -45,7 +45,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://x.com/la_curations",
+    href: "https://x.com/lacurations",
     label: "X (Twitter)",
     icon: (
       <svg

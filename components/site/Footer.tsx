@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-white">
       <img
-        src="/assets/images/LA/footer.png"
+        src="/assets/images/LA/footer.webp"
         alt="LA Curations Logo"
         className="w-[100px] lg:w-[300px] h-auto absolute left-0 bottom-0"
       />

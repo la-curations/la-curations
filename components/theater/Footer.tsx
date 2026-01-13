@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center gap-50">
           <Image
-            src="/assets/images/theater/LA.png"
+            src="/assets/images/theater/LA.webp"
             alt="Personalized Cinema Companion"
             width={100}
             height={400}

@@ -7,7 +7,7 @@ const MyFilters = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Image
-            src="/assets/images/theater/F1.png"
+            src="/assets/images/theater/F1.webp"
             alt="Personalized Cinema Companion"
             width={400}
             height={400}

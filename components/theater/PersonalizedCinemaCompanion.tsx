@@ -9,14 +9,14 @@ const PersonalizedCinemaCompanion = () => {
           {/* Left side - Mobile phones stack */}
           <div className="relative w-full max-w-md">
             <Image
-              src="/assets/images/theater/mesh.png"
+              src="/assets/images/theater/mesh.webp"
               alt="Mesh"
               width={500}
               height={500}
               className="w-full h-auto object-contain absolute -top-[30%] z-0"
             />
             <Image
-              src="/assets/images/theater/pcc.png"
+              src="/assets/images/theater/pcc.webp"
               alt="Personalized Cinema Companion"
               width={500}
               height={500}
@@ -27,7 +27,7 @@ const PersonalizedCinemaCompanion = () => {
           {/* Right side - Text content */}
           <div className="relative text-center lg:text-left">
             <Image
-              src="/assets/images/theater/mesh.png"
+              src="/assets/images/theater/mesh.webp"
               alt="Mesh"
               width={800}
               height={500}

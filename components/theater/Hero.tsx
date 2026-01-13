@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import theaterTitle from "../../public/assets/images/theater/theater-title.png";
+import theaterTitle from "../../public/assets/images/theater/theater-title.webp";
 import { Waterfall } from "next/font/google";
 
 const waterFall = Waterfall({
@@ -13,7 +13,7 @@ const waterFall = Waterfall({
 
 const Hero = () => {
   return (
-    <section className="w-screen h-screen bg-[url('/assets/images/theater/theater-hero.png')] bg-cover bg-center bg-no-repeat">
+    <section className="w-screen h-screen bg-[url('/assets/images/theater/theater-hero.webp')] bg-cover bg-center bg-no-repeat">
       <div className="flex flex-col gap-6 text-center items-center justify-center h-full">
         <p
           className={`${waterFall.className} text-4xl lg:text-6xl leading-[1.2] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8aabff] to-[#f863da]`}

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import la from "../../public/la-theater64.png";
+import la from "assets/images/theater/theater64.png";
 
 const Header = () => {
   const links = useMemo(

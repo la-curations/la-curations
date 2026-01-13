@@ -3,21 +3,21 @@ import Image from "next/image";
 const valueProps = [
   {
     key: "data",
-    image: "/assets/images/LA/VP1.png",
+    image: "/assets/images/LA/VP1.webp",
     title: "Technology that minds its own business.",
     description:
       "Apps that never follow you around. Only essential data, always yours to keep or delete.",
   },
   {
     key: "noads",
-    image: "/assets/images/LA/VP2.png",
+    image: "/assets/images/LA/VP2.webp",
     title: "Nothing interrupts your flow.",
     description:
       "No ads. No trackers. Just a quiet, uninterrupted experience designed around you.",
   },
   {
     key: "design",
-    image: "/assets/images/LA/VP3.png",
+    image: "/assets/images/LA/VP3.webp",
     title: "Crafted for Delight",
     description:
       "Thoughtful, refined design that prioritizes clarity, speed, and calm. Apps that feel good to use.",

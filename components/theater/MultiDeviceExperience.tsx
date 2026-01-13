@@ -7,7 +7,7 @@ const MultiDeviceExperience = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Image
-            src="/assets/images/theater/platforms.png"
+            src="/assets/images/theater/platforms.webp"
             alt="Personalized Cinema Companion"
             width={500}
             height={400}

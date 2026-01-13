@@ -22,7 +22,7 @@ const ExperienceTheaterNow = () => {
           {/* Google Play Store */}
           <div className="flex items-center gap-4">
             <Image
-              src="/assets/images/theater/play.png"
+              src="/assets/images/theater/play.webp"
               alt="Personalized Cinema Companion"
               width={100}
               height={100}
