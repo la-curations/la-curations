@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LA Curations",
     description: "Curated for you",
-    creator: "@la_curations", // Placeholder, useful if you have a handle
+    creator: "@lacurations",
     images: ["/logo512.png"],
   },
 };

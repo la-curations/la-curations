@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "LA Curations",
     description:
       "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
-    creator: "@la_curations",
+    creator: "@lacurations",
     images: [
       "https://lacurations.vercel.app/assets/images/theater/la-og-image.png",
     ],
@@ -85,9 +85,9 @@ export default function Home() {
     url: "https://lacurations.vercel.app",
     logo: "https://lacurations.vercel.app/logo.png",
     sameAs: [
-      "https://x.com/la_curations",
-      "https://instagram.com/la_curations",
-      "https://reddit.com/r/la_curations",
+      "https://x.com/lacurations",
+      "https://instagram.com/lacurations",
+      // "https://reddit.com/r/lacurations",
       // "https://youtube.com/@la_curations",
       // Add other social profiles here
     ],
