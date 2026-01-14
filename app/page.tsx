@@ -92,7 +92,12 @@ export default function Home() {
       // Add other social profiles here
     ],
     description:
-      "Independent software studio acting as a portfolio for premium applications and digital products.",
+      "Independent software studio building premium, privacy-focused applications like Theater. We craft digital experiences with zero tracking and ad-free interfaces.",
+    foundingDate: "2026",
+    founder: {
+      "@type": "Person",
+      name: "Leo Antony",
+    },
   };
 
   return (

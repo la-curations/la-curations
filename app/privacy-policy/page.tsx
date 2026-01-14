@@ -3,6 +3,10 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy • LA Curations",
   description: "Our approach to privacy and data collection.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function Privacy() {

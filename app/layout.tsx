@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     "Privacy focused apps",
     "Ad-free cinema guide",
     "productivity tools",
+    "Movie Tracker",
+    "TV Show Tracker",
+    "AI Streaming Guide",
+    "No ads movie app",
   ],
   authors: [{ name: "LA Curations" }],
   icons: {

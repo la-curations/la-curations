@@ -12,7 +12,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Theater",
   description:
-    "Theater App by LA Curations serves as your personalized cinema companion. AI-powered recommendations for smarter streaming on all your devices.",
+    "Discover 'Theater' by LA Curations, the ultimate AI-powered movie and TV tracker. Ad-free, private, and smart streaming recommendations for cinema lovers.",
   keywords: [
     "Theater by LA Curations",
     "Theater App",
@@ -82,8 +82,16 @@ export default function Theater() {
     description:
       "No ads. No tracking. No data collection. Enjoy the next level of streaming with Theater App. AI-curated content just for you.",
     featureList:
-      "AI Recommendations, Cross-platform Sync, Watchlist Management",
-    screenshot: "/assets/images/theater/theater-og-image.png",
+      "AI Recommendations, Cross-platform Sync, Watchlist Management, Ad-free Experience",
+    screenshot:
+      "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+    },
+    genre: "Entertainment",
   };
 
   const breadcrumbLd = {

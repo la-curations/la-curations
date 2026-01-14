@@ -3,6 +3,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | Theater App",
   description: "Privacy Policy for Theater App by LA Curations.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 const PrivacyPolicy = () => {

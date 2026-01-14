@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use • LA Curations",
-  description: "Our approach to privacy and data collection.",
+  description:
+    "Terms and conditions for using LA Curations websites and services.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function TermsOfUse() {
