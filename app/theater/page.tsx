@@ -8,6 +8,7 @@ import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
 import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
+import MyDiary from "@/components/theater/MyDiary";
 
 export const metadata: Metadata = {
   title: "Theater",
@@ -137,6 +138,7 @@ export default function Theater() {
         <AIFeatures />
         <AndMore />
         <MyFilters />
+        <MyDiary />
         {/* <MySpace /> */}
         <MultiDeviceExperience />
         <ExperienceTheaterNow />

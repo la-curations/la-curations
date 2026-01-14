@@ -20,32 +20,42 @@ const carouselItems = [
     title: "AI Search Mode",
     description:
       "Search with partial title, story you remember, or whatever. Get the Best Match and more.",
+    alt: "AI Search Mode - Search with partial title, story you remember, or whatever. Get the Best Match and more.",
   },
   {
     image: "/assets/images/theater/AI2.webp",
     title: "My Next Watch",
-    description: (
-      <>
-        What is your{" "}
-        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#AA4EFF] to-[#FF5E87] font-semibold">
-          cinema taste
-        </span>
-        ? Don't tell us. Theater AI will find and you will get the
-        recommendations of your taste.
-      </>
-    ),
+    description:
+      "Theater AI will find your cinema taste and you will get the recommendations of your taste.",
+    alt: "My Next Watch - Theater AI will find your cinema taste and you will get the recommendations of your taste.",
+  },
+  {
+    image: "/assets/images/theater/AI5.webp",
+    title: "Cinema Chat",
+    description:
+      "Chat about movies and series with AI straight from a movie/series screen, Ask anything you want to know about that movie/series.",
+    alt: "Cinema Chat - Chat about movies and series with AI straight from a movie/series screen, Ask anything you want to know about that movie/series.",
+  },
+  {
+    image: "/assets/images/theater/AI6.webp",
+    title: "Ask Theater AI",
+    description:
+      "Ask recommendations, get insights, compare, and more. Create more threads for different topics.",
+    alt: "Ask Theater AI - Ask recommendations, get insights, compare, and more. Create more threads for different topics.",
   },
   {
     image: "/assets/images/theater/AI3.webp",
     title: "Watchlist Insights",
     description:
       "Get insights from all the watchlists in the app, find the hidden gems, discover the pattern and more.",
+    alt: "Watchlist Insights - Get insights from all the watchlists in the app, find the hidden gems, discover the pattern and more.",
   },
   {
     image: "/assets/images/theater/AI4.webp",
     title: "AI Compare",
     description:
       "Compare all movies or series in your watchlists and get the Best Match and the reasons why.",
+    alt: "AI Compare - Compare all movies or series in your watchlists and get the Best Match and the reasons why.",
   },
 ];
 
@@ -152,7 +162,7 @@ const AIFeatures = () => {
                 >
                   <Image
                     src={item.image}
-                    alt={item.title}
+                    alt={item.alt}
                     width={300}
                     height={300}
                     className="max-w-[80%] mx-auto object-contain relative z-10"
