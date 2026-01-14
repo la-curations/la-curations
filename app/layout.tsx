@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description: "Curated for you",
     site: "@lacurations",
     creator: "@lacurations",
-    images: ["/assets/images/LA/la-og-image.png"],
+    images: ["https://lacurations.vercel.app/assets/images/LA/la-og-image.png"],
   },
 };
 

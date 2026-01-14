@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/images/LA/la-og-image.png",
+        url: "https://lacurations.vercel.app/assets/images/LA/la-og-image.png",
         width: 1200,
         height: 630,
         alt: "LA Curations - Independent App Studio",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
       "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
     site: "@lacurations",
     creator: "@lacurations",
-    images: ["/assets/images/LA/la-og-image.png"],
+    images: ["https://lacurations.vercel.app/assets/images/LA/la-og-image.png"],
   },
 };
 
