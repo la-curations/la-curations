@@ -8,11 +8,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lacurations.vercel.app"),
-  title: {
-    default: "LA Curations - Curated for you",
-    template: "%s | LA Curations",
-  },
-  manifest: "/manifest.json",
+  title: "LA Curations - Curated for you",
   description:
     "LA Curations is an independent studio crafting premium, privacy-focused mobile apps. Experience ad-free apps like 'Theater' designed with a clean UI/UX and zero data collection.",
   keywords: [
@@ -29,25 +25,6 @@ export const metadata: Metadata = {
     canonical: "https://lacurations.vercel.app",
   },
   authors: [{ name: "LA Curations" }],
-  icons: {
-    icon: [
-      {
-        url: "/logo64.png",
-        sizes: "64x64 32x32 24x24 16x16",
-        type: "image/png",
-      },
-      { url: "/logo512.png", sizes: "512x512", type: "image/png" },
-      { url: "/favicon.ico" },
-    ],
-    apple: [
-      {
-        url: "/logo64.png",
-        sizes: "64x64 32x32 24x24 16x16",
-        type: "image/png",
-      },
-    ],
-    shortcut: "/logo64.png",
-  },
   openGraph: {
     title: "LA Curations",
     description:
@@ -105,6 +82,17 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "LA Curations",
+            url: "https://lacurations.vercel.app",
+          }),
+        }}
       />
       <HomeHero />
       <ValueProps />

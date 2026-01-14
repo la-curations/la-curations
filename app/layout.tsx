@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   authors: [{ name: "LA Curations" }],
   icons: {
     icon: [
-      { url: "/logo512.png", sizes: "512x512", type: "image/png" },
-      { url: "/favicon.ico" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo64.png", type: "image/png", sizes: "64x64" },
+      { url: "/logo512.png", type: "image/png", sizes: "512x512" },
     ],
     apple: [{ url: "/logo512.png", sizes: "512x512", type: "image/png" }],
-    shortcut: "/logo512.png",
   },
   openGraph: {
     title: "LA Curations",

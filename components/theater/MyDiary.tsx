@@ -13,7 +13,8 @@ const MyDiary = () => {
               Cinema tracker
             </p>
             <p className="text-lg lg:text-xl text-white/70 leading-relaxed">
-              Track your movie and TV show history and current watch progress.
+              Track your movie and TV show history and current watch progress
+              with personal notes, ratings and emotional emojis.
             </p>
           </div>
           <Image
