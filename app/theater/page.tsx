@@ -57,9 +57,9 @@ export const metadata: Metadata = {
     title: "Theater App",
     description:
       "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
-    images: [
-      "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
-    ],
+    site: "@lacurations",
+    creator: "@lacurations",
+    images: ["/assets/images/theater/theater-og-image.png"],
   },
   robots: {
     index: true,

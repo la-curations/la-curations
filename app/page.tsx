@@ -35,10 +35,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://lacurations.vercel.app/assets/images/theater/la-og-image.png",
+        url: "/assets/images/LA/la-og-image.png",
         width: 1200,
         height: 630,
-        alt: "LA Curations Logo",
+        alt: "LA Curations - Independent App Studio",
       },
     ],
   },
@@ -47,10 +47,9 @@ export const metadata: Metadata = {
     title: "LA Curations",
     description:
       "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
+    site: "@lacurations",
     creator: "@lacurations",
-    images: [
-      "https://lacurations.vercel.app/assets/images/theater/la-og-image.png",
-    ],
+    images: ["/assets/images/LA/la-og-image.png"],
   },
 };
 
