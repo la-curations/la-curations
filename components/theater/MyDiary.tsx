@@ -10,9 +10,11 @@ const MyDiary = () => {
               My Diary
             </h2>
             <p className="text-lg lg:text-2xl mb-6 text-[#fa5eff] opacity-70">
+              Cinema tracker
+            </p>
+            <p className="text-lg lg:text-xl text-white/70 leading-relaxed">
               Track your movie and TV show history and current watch progress.
             </p>
-            <p className="text-lg lg:text-xl text-white/70 leading-relaxed"></p>
           </div>
           <Image
             src="/assets/images/theater/F2.webp"
