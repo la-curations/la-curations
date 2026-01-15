@@ -63,16 +63,22 @@ export default function Home() {
     sameAs: [
       "https://x.com/lacurations",
       "https://instagram.com/lacurations",
-      // "https://reddit.com/r/lacurations",
-      // "https://youtube.com/@la_curations",
-      // Add other social profiles here
+      "https://threads.com/@lacurations",
+      "https://facebook.com/lacurations",
     ],
     description:
-      "Independent software studio building premium, privacy-focused applications like Theater. We craft digital experiences with zero tracking and ad-free interfaces.",
+      "Independent software studio building premium, privacy-focused applications like Theater. LA Curations crafts digital experiences with zero tracking and ad-free interfaces.",
     foundingDate: "2026",
     founder: {
       "@type": "Person",
       name: "Leo Antony",
+      jobTitle: "Software Engineer",
+      url: "https://linkedin.com/in/leo-antony",
+      sameAs: [
+        "https://instagram.com/leoantony2002",
+        "https://linkedin.com/in/leo-antony",
+        "mailto:leoantony20025@gmail.com",
+      ],
     },
   };
 
