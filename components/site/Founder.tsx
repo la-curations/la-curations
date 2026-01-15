@@ -94,6 +94,29 @@ const Founder = () => {
             </svg>
           </a>
 
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/leoantony2002"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
+            aria-label="Leo Antony's Facebook"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+
           {/* Email */}
           <a
             href="mailto:leoantony20025@gmail.com"

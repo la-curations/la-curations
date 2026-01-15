@@ -17,21 +17,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
+      lastModified: new Date("2026-01-02"),
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/theater/privacy-policy`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
+      lastModified: new Date("2026-01-02"),
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/terms-of-use`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.5,
+      lastModified: new Date("2026-01-02"),
+      changeFrequency: "monthly",
+      priority: 0.7,
     },
   ];
 }

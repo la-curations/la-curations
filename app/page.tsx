@@ -77,6 +77,7 @@ export default function Home() {
       sameAs: [
         "https://instagram.com/leoantony2002",
         "https://linkedin.com/in/leo-antony",
+        "https://www.facebook.com/leoantony2002",
         "mailto:leoantony20025@gmail.com",
       ],
     },
