@@ -41,7 +41,7 @@ const ValueProps = () => {
           <p className="lg:text-md text-xs text-gray-600 font-light leading-tight mt-5 max-w-[80%] mx-auto">
             LA Curations believes in a different kind of internet. One where you
             aren't the product. LA Curations builds premium, privacy-focused
-            products designed for peace of mind.
+            products designed for excellence.
           </p>
         </div>
 
