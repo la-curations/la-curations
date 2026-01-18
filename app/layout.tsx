@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geologica } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geologica = Geologica({
@@ -75,6 +76,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geologica.className} antialiased no-scrollbar`}>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-CKWE24ND5M`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CKWE24ND5M', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         {children}
       </body>
     </html>
