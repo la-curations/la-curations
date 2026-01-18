@@ -1,9 +1,21 @@
+"use client";
+
 import React from "react";
 import { Waterfall } from "next/font/google";
 
 const waterfall = Waterfall({ weight: "400" });
 
 const Founder = () => {
+  const trackSocialClick = (platform: string) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "click", {
+        event_category: "social",
+        event_label: `Founder ${platform} Click`,
+        value: 1,
+      });
+    }
+  };
+
   return (
     <div className="my-32 lg:my-56 bg-white text-black">
       <div className="w-screen relative flex flex-col items-center justify-center">
@@ -51,6 +63,7 @@ const Founder = () => {
             rel="noopener noreferrer"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
             aria-label="Leo Antony's Instagram"
+            onClick={() => trackSocialClick("Instagram")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +89,7 @@ const Founder = () => {
             rel="noopener noreferrer"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
             aria-label="Leo Antony's LinkedIn"
+            onClick={() => trackSocialClick("LinkedIn")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,6 +115,7 @@ const Founder = () => {
             rel="noopener noreferrer"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
             aria-label="Leo Antony's Facebook"
+            onClick={() => trackSocialClick("Facebook")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,6 +137,7 @@ const Founder = () => {
             href="mailto:leoantony20025@gmail.com"
             className="w-15 h-15 flex items-center justify-center bg-[#F3F4F6] rounded-full text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
             aria-label="Email Leo Antony"
+            onClick={() => trackSocialClick("Email")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

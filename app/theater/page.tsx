@@ -79,11 +79,11 @@ export default function Theater() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Theater",
-    operatingSystem: "Web, iOS, Android",
+    operatingSystem: "Android (Mobile, Tablet, TV), iOS",
     applicationCategory: "EntertainmentApplication",
     applicationSubCategory: "Movie & TV Tracker",
     description:
-      "No ads. No tracking. No data collection. Enjoy the next level of streaming with Theater App. AI-curated content just for you.",
+      "A permanently free, ad-free, and private AI-powered movie tracker. No tracking, no data collection, and no hidden fees—ever.",
     featureList:
       "AI Recommendations, Cross-platform Sync, Watchlist Management, Ad-free Experience",
     screenshot:

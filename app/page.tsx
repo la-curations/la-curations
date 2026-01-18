@@ -4,6 +4,7 @@ import Footer from "@/components/site/Footer";
 import Founder from "@/components/site/Founder";
 import Socials from "@/components/site/Socials";
 import HomeHero from "@/components/site/HomeHero";
+import FAQ from "@/components/site/FAQ";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,6 +21,10 @@ export const metadata: Metadata = {
     "Privacy focused apps",
     "Ad-free cinema guide",
     "productivity tools",
+    "Movie Tracker",
+    "TV Show Tracker",
+    "AI Streaming Guide",
+    "No ads movie app",
   ],
   alternates: {
     canonical: "https://lacurations.vercel.app",
@@ -54,7 +59,22 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const jsonLd = {
+  const faqs = [
+    {
+      q: "Is Theater free?",
+      a: "Theater is a permanently free, ad-free experience. There are no trackers, no hidden fees, and no data collection—ever.",
+    },
+    {
+      q: "Which platforms is the Theater App on?",
+      a: "Theater is launching first on Android with universal support for Mobile, Tablet, and TV. An iOS version is currently in development.",
+    },
+    {
+      q: "Is LA Curations a team or individual?",
+      a: "LA Curations is an independent studio founded by Leo Antony (Software Engineer), dedicated to crafting refined, privacy-first digital tools.",
+    },
+  ];
+
+  const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "LA Curations",
@@ -67,7 +87,7 @@ export default function Home() {
       "https://facebook.com/lacurations",
     ],
     description:
-      "Independent software studio building premium, privacy-focused applications like Theater. LA Curations crafts digital experiences with zero tracking and ad-free interfaces.",
+      "An independent software studio building premium, privacy-focused applications like Theater. LA Curations crafts digital experiences with zero tracking and ad-free interfaces.",
     foundingDate: "2026",
     founder: {
       "@type": "Person",
@@ -83,28 +103,46 @@ export default function Home() {
     },
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+
+  const webSiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "LA Curations",
+    url: "https://lacurations.vercel.app",
+  };
+
   return (
     <main className="min-h-screen bg-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: "LA Curations",
-            url: "https://lacurations.vercel.app",
-          }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
       />
       <HomeHero />
       <ValueProps />
       <AppShowcase />
       <Founder />
       <Socials />
+      <FAQ />
       <Footer />
     </main>
   );

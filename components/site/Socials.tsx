@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Ruthie } from "next/font/google";
 
@@ -87,6 +89,16 @@ const socialLinks = [
 ];
 
 const Socials = () => {
+  const trackSocialClick = (platform: string) => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "click", {
+        event_category: "social",
+        event_label: `LA Curations ${platform} Click`,
+        value: 1,
+      });
+    }
+  };
+
   return (
     <section className="pb-32 lg:pb-56 bg-white flex flex-col items-center justify-center overflow-hidden">
       <div className="relative flex items-center justify-center mb-2">
@@ -94,7 +106,7 @@ const Socials = () => {
         <h2 className="text-[56px] text-center md:text-[96px] lg:text-[128px] font-black text-[#F3F4F6]">
           STAY TUNED
         </h2>
-        <div className="absolute inset-x-0 bottom-0 h-16 md:h-24 lg:h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+        <div className="absolute inset-x-0 bottom-0 h-16 md:h-24 lg:h-32 bg-linear-to-t from-white to-transparent pointer-events-none"></div>
 
         {/* Foreground Script Text */}
         <p
@@ -116,6 +128,7 @@ const Socials = () => {
             }
             className="w-12 h-12 md:w-18 md:h-18 flex items-center justify-center bg-[#F3F4F6] rounded-2xl text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
             aria-label={link.label}
+            onClick={() => trackSocialClick(link.label)}
           >
             {link.icon}
           </a>
