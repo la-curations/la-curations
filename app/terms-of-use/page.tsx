@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Use • LA Curations",
   description:
-    "Terms and conditions for using LA Curations websites and services.",
+    "The terms and conditions governing the use of LA Curations apps and services.",
   robots: {
     index: true,
     follow: true,
