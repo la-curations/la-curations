@@ -123,11 +123,33 @@ export default function Home() {
     url: "https://lacurations.vercel.app",
   };
 
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Leo Antony",
+    jobTitle: "Software Engineer",
+    description: "Software Engineer and Founder of LA Curations.",
+    url: "https://lacurations.vercel.app",
+    sameAs: [
+      "https://instagram.com/leoantony2002",
+      "https://linkedin.com/in/leo-antony",
+      "https://www.facebook.com/leoantony2002",
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      {/* Identity Verification Links (Hidden but visible to crawlers) */}
+      <link rel="me" href="https://linkedin.com/in/leo-antony" />
+      <link rel="me" href="https://instagram.com/leoantony2002" />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
       <script
         type="application/ld+json"

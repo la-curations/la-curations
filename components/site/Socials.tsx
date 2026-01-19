@@ -9,6 +9,7 @@ const socialLinks = [
   {
     href: "https://instagram.com/lacurations",
     label: "Instagram",
+    fullLabel: "Instagram: instagram.com/lacurations",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +31,7 @@ const socialLinks = [
   {
     href: "https://facebook.com/lacurations",
     label: "Facebook",
+    fullLabel: "Facebook: facebook.com/lacurations",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -49,6 +51,7 @@ const socialLinks = [
   {
     href: "https://x.com/lacurations",
     label: "X (Twitter)",
+    fullLabel: "X (Twitter): x.com/lacurations",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +72,7 @@ const socialLinks = [
   {
     href: "mailto:la.curations@gmail.com",
     label: "Email",
+    fullLabel: "Email: la.curations@gmail.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +104,10 @@ const Socials = () => {
   };
 
   return (
-    <section className="pb-32 lg:pb-56 bg-white flex flex-col items-center justify-center overflow-hidden">
+    <section
+      aria-label="Socials"
+      className="pb-32 lg:pb-56 bg-white flex flex-col items-center justify-center overflow-hidden"
+    >
       <div className="relative flex items-center justify-center mb-2">
         {/* Background Text */}
         <h2 className="text-[56px] text-center md:text-[96px] lg:text-[128px] font-black text-[#F3F4F6]">
@@ -124,12 +131,15 @@ const Socials = () => {
             href={link.href}
             target={link.href.startsWith("mailto") ? undefined : "_blank"}
             rel={
-              link.href.startsWith("mailto") ? undefined : "noopener noreferrer"
+              link.href.startsWith("mailto")
+                ? undefined
+                : "noopener noreferrer me"
             }
             className="w-12 h-12 md:w-18 md:h-18 flex items-center justify-center bg-[#F3F4F6] rounded-2xl text-gray-600 hover:bg-black hover:text-white transition-all duration-300"
             aria-label={link.label}
             onClick={() => trackSocialClick(link.label)}
           >
+            <span className="sr-only">{link.fullLabel}</span>
             {link.icon}
           </a>
         ))}
