@@ -66,6 +66,11 @@ export const metadata: Metadata = {
     creator: "@lacurations",
     images: ["https://lacurations.vercel.app/assets/images/LA/la-og-image.png"],
   },
+  verification: {
+    other: {
+      "p:domain_verify": "f2a7d3756be00232c9d5d3c243aa7724",
+    },
+  },
 };
 
 export default function RootLayout({
