@@ -9,6 +9,7 @@ import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
 import MyDiary from "@/components/theater/MyDiary";
+import Waitlist from "@/components/theater/Waitlist";
 
 export const metadata: Metadata = {
   title: "Theater",
@@ -144,8 +145,9 @@ export default function Theater() {
         {/* <MySpace /> */}
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
+        <Waitlist />
         <Footer />
-        <div className="bg-gradient-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
+        <div className="bg-linear-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
       </main>
     </>
   );
