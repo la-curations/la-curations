@@ -8,11 +8,13 @@ import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
 import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
+import MyDiary from "@/components/theater/MyDiary";
+import Waitlist from "@/components/theater/Waitlist";
 
 export const metadata: Metadata = {
   title: "Theater",
   description:
-    "Theater App by LA Curations serves as your personalized cinema companion. AI-powered recommendations for smarter streaming on all your devices.",
+    "Discover 'Theater' by LA Curations, the ultimate AI-powered movie and TV tracker. Ad-free, private, and smart streaming recommendations for cinema lovers.",
   keywords: [
     "Theater by LA Curations",
     "Theater App",
@@ -56,6 +58,8 @@ export const metadata: Metadata = {
     title: "Theater App",
     description:
       "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
+    site: "@lacurations",
+    creator: "@lacurations",
     images: [
       "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
     ],
@@ -76,14 +80,22 @@ export default function Theater() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Theater",
-    operatingSystem: "Web, iOS, Android",
+    operatingSystem: "Android (Mobile, Tablet, TV), iOS",
     applicationCategory: "EntertainmentApplication",
     applicationSubCategory: "Movie & TV Tracker",
     description:
-      "No ads. No tracking. No data collection. Enjoy the next level of streaming with Theater App. AI-curated content just for you.",
+      "A permanently free, ad-free, and private AI-powered movie tracker. No tracking, no data collection, and no hidden fees—ever.",
     featureList:
-      "AI Recommendations, Cross-platform Sync, Watchlist Management",
-    screenshot: "/assets/images/theater/theater-og-image.png",
+      "AI Recommendations, Cross-platform Sync, Watchlist Management, Ad-free Experience",
+    screenshot:
+      "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+    },
+    genre: "Entertainment",
   };
 
   const breadcrumbLd = {
@@ -129,11 +141,13 @@ export default function Theater() {
         <AIFeatures />
         <AndMore />
         <MyFilters />
+        <MyDiary />
         {/* <MySpace /> */}
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
+        <Waitlist />
         <Footer />
-        <div className="bg-gradient-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
+        <div className="bg-linear-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
       </main>
     </>
   );

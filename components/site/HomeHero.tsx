@@ -38,7 +38,7 @@ const HomeHero = () => {
         <h2
           className={`text-2xl md:text-3xl lg:text-4xl text-center font-semibold text-[#000000] tracking-tight mt-10 ${playfair.className}`}
         >
-          Clean. Restraint. Finesse.
+          Clean. Resilient. Finesse.
         </h2>
       </div>
 
@@ -46,7 +46,7 @@ const HomeHero = () => {
       <div className="absolute right-0 bottom-0 lg:top-0 w-1/2 md:w-2/5 flex items-center justify-end z-10">
         <div className="relative w-full h-[60%] flex items-center justify-end">
           <Image
-            src="/assets/images/LA/hero.png"
+            src="/assets/images/LA/hero.webp"
             alt="Hero"
             width={800}
             height={800}

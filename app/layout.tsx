@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geologica } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geologica = Geologica({
@@ -26,15 +27,19 @@ export const metadata: Metadata = {
     "Privacy focused apps",
     "Ad-free cinema guide",
     "productivity tools",
+    "Movie Tracker",
+    "TV Show Tracker",
+    "AI Streaming Guide",
+    "No ads movie app",
   ],
   authors: [{ name: "LA Curations" }],
   icons: {
     icon: [
-      { url: "/logo512.png", sizes: "512x512", type: "image/png" },
-      { url: "/favicon.ico" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo64.png", type: "image/png", sizes: "64x64" },
+      { url: "/logo512.png", type: "image/png", sizes: "512x512" },
     ],
     apple: [{ url: "/logo512.png", sizes: "512x512", type: "image/png" }],
-    shortcut: "/logo512.png",
   },
   openGraph: {
     title: "LA Curations",
@@ -57,8 +62,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LA Curations",
     description: "Curated for you",
-    creator: "@la_curations", // Placeholder, useful if you have a handle
-    images: ["/logo512.png"],
+    site: "@lacurations",
+    creator: "@lacurations",
+    images: ["https://lacurations.vercel.app/assets/images/LA/la-og-image.png"],
+  },
+  verification: {
+    other: {
+      "p:domain_verify": "f2a7d3756be00232c9d5d3c243aa7724",
+    },
   },
 };
 
@@ -70,6 +81,31 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geologica.className} antialiased no-scrollbar`}>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-CKWE24ND5M`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CKWE24ND5M', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+        {/* Microsoft Clarity */}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "v5kcs3521v");
+          `}
+        </Script>
         {children}
       </body>
     </html>
