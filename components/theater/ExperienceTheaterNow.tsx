@@ -51,11 +51,11 @@ const ExperienceTheaterNow = () => {
             onClick={() => trackInterest("Google Play")}
           >
             <Image
-              src="/assets/images/theater/play.webp"
+              src="/assets/images/theater/Play.png"
               alt="Personalized Cinema Companion"
-              width={100}
-              height={100}
-              className="w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] object-contain relative z-10"
+              width={250}
+              height={70}
+              className="w-[150px] h-[50px] lg:w-[250px] lg:h-[70px] object-contain relative z-10"
             />
             <p className="text-white/60 font-light text-sm text-nowrap">
               Launching soon...
