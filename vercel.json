@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/theater/movie/:id",
+      "destination": "https://www.themoviedb.org/movie/:id",
+      "permanent": false
+    },
+    {
+      "source": "/theater/tv/:id",
+      "destination": "https://www.themoviedb.org/tv/:id",
+      "permanent": false
+    }
+  ]
+}
