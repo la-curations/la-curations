@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Waterfall } from "next/font/google";
+import Link from "next/link";
 
 const waterFall = Waterfall({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ const TheaterInvite = () => {
           >
             Get
           </p>
-          <div className="relative w-[280px] lg:w-[400px]">
+          <Link href="/theater" className="relative w-[280px] lg:w-[400px] hover:opacity-80 transition-opacity">
             <Image
               src="/assets/images/theater/theater-title.webp"
               alt="THEATER"
@@ -44,7 +45,7 @@ const TheaterInvite = () => {
               className="w-full h-auto object-contain"
               priority
             />
-          </div>
+          </Link>
         </div>
 
         {/* Play Store CTA */}
@@ -66,14 +67,14 @@ const TheaterInvite = () => {
       </div>
 
       {/* Branded Footer */}
-      <div className="absolute bottom-10 left-0 right-0 flex items-center justify-center">
+      <Link href="/" className="absolute bottom-10 left-0 right-0 flex items-center justify-center hover:opacity-60 transition-opacity">
         <Image
           src="/assets/images/theater/SplashSignature.png"
           alt="curated by LA"
           width={110}
           height={30}
         />
-      </div>
+      </Link>
     </div>
   );
 };
