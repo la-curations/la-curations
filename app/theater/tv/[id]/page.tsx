@@ -11,11 +11,11 @@ export async function generateMetadata(
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const unresolvedSearchParams = await searchParams;
-  const title = (unresolvedSearchParams?.title as string) || "Theater App - Get the Movie & TV Tracker";
-  const description =
-    (unresolvedSearchParams?.description as string) ||
-    "Experience the next level of streaming with Theater App. Download now on Google Play.";
-  const image = unresolvedSearchParams?.image as string;
+  const title = (unresolvedSearchParams?.t as string) || "Theater App - Get the Movie & TV Tracker";
+  const description = "Experience the next level of streaming with Theater App. Download now on Google Play.";
+  
+  const posterPath = unresolvedSearchParams?.p as string;
+  const image = posterPath ? `https://image.tmdb.org/t/p/w500${posterPath}` : undefined;
 
   return {
     title,
