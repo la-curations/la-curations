@@ -5,6 +5,26 @@
       "namespace": "android_app",
       "package_name": "com.lacurations.theater",
       "sha256_cert_fingerprints": [
+        "4D:4F:34:C1:86:3D:A1:E5:67:26:21:3C:E4:57:B7:56:F6:9D:66:66:4D:9B:4B:59:5F:15:54:AB:46:39:59:E6"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lacurations.theater",
+      "sha256_cert_fingerprints": [
+        "A6:47:D3:0D:1F:AE:4E:02:05:98:18:0C:DF:99:CF:BC:BD:83:7E:73:D7:D3:2E:80:2F:C2:17:36:37:40:11:AC"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.lacurations.theater",
+      "sha256_cert_fingerprints": [
         "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C"
       ]
     }
