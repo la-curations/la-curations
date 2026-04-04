@@ -11,102 +11,126 @@ export const metadata: Metadata = {
 
 const PrivacyPolicy = () => {
   return (
-    <div className=" bg-white text-black mx-auto font-serif p-5 lg:p-20 flex flex-col gap-2">
-      <h1 className="text-5xl">Privacy Policy</h1>
-      <p>Effective Date: January 2, 2026</p>
+    <div className="bg-white text-black mx-auto font-serif p-5 lg:p-20 flex flex-col gap-2">
+      <h1 className="text-5xl font-bold mb-4">Privacy Policy</h1>
+      <p>Effective Date: April 4, 2026</p>
 
       <p>
-        THEATER is a privacy-first movie and TV discovery application. We are
-        committed to protecting your privacy and being transparent about how
-        data is handled.
+        <strong>THEATER</strong> is a movie and TV discovery application. The
+        core principle of the application is to protect user privacy by ensuring
+        that personal data remains on the user's device.
       </p>
 
-      <h2 className="text-2xl mt-5">1. Data We Collect</h2>
+      <h2 className="text-2xl mt-5 font-semibold">1. No Data Collection</h2>
       <p>
-        THEATER does not collect, store, or sell personal data on our servers.
+        THEATER does not collect, store, or transmit any personal or sensitive
+        data to external servers. There is no backend database or server-side
+        storage provided by the developer.
       </p>
-      <p>All user data is stored locally on your device only, including:</p>
-      <ul>
-        <li>Watchlists and collections</li>
-        <li>Saved filters and preferences</li>
-        <li>Calendar reminders</li>
-        <li>Cached movie and TV metadata</li>
-        <li>Device settings and preferences</li>
-      </ul>
-      <p>THEATER does not require account creation.</p>
-
-      <h2 className="text-2xl mt-5">2. Third-Party Data Sources</h2>
       <p>
-        THEATER uses public movie and TV metadata provided by The Movie Database
-        (TMDB). This data may include titles, descriptions, posters, release
-        dates, genres, ratings, and trailers etc.
+        All user-generated content and personalizations are stored{" "}
+        <strong>locally on the device only</strong>, including:
       </p>
-
-      <h2 className="text-2xl mt-5">3. Optional AI Features</h2>
-      <p>THEATER offers optional AI-powered features such as:</p>
-      <ul>
-        <li>AI search and filtering</li>
-        <li>Mood-based recommendations</li>
-        <li>Watchlist insights and trivia</li>
-      </ul>
-      <p>
-        To use these features, users may optionally provide their own AI
-        provider API key.
-      </p>
-      <p>Important notes:</p>
-      <ul>
-        <li>The API key is stored securely on your device only</li>
-        <li>The key is never uploaded, logged, or shared by THEATER</li>
+      <ul className="list-disc ml-8">
         <li>
-          AI requests are sent directly from your device to the AI provider
+          <strong>My Diary:</strong> Watch history, progress tracking for movies
+          and series, personal ratings, emojis, and notes.
         </li>
-        <li>You can remove the API key at any time from app settings</li>
-      </ul>
-      <p>
-        AI features are fully optional and the app remains usable without them.
-      </p>
-
-      <h2 className="text-2xl mt-5">4. Advertising & Tracking</h2>
-      <p>THEATER:</p>
-      <ul>
-        <li>Does not show ads</li>
-        <li>Does not use trackers</li>
-        <li>Does not sell user data</li>
-        <li>Does not perform cross-app tracking</li>
-      </ul>
-
-      <h2 className="text-2xl mt-5">5. Data Retention & Deletion</h2>
-      <p>Since all data is stored locally:</p>
-      <ul>
         <li>
-          You can delete your data at any time by clearing app data or
-          uninstalling the app
+          <strong>Watchlists & Collections:</strong> Custom playlists and movie
+          groups created by the user.
         </li>
-        <li>API keys can be manually removed from settings</li>
+        <li>
+          <strong>My Calendar:</strong> Scheduled notifications and release
+          reminders for upcoming content.
+        </li>
+        <li>
+          <strong>My Filters:</strong> Saved search preferences and custom
+          display filters.
+        </li>
+        <li>
+          <strong>Region & Language:</strong> Manually selected country and
+          language settings used for content customization.
+        </li>
       </ul>
 
-      <h2 className="text-2xl mt-5">6. Children’s Privacy</h2>
+      <h2 className="text-2xl mt-5 font-semibold">
+        2. Third-Party Data & API Keys
+      </h2>
       <p>
-        THEATER is not directed toward children under 13 and does not knowingly
-        collect data from children.
+        THEATER facilitates a direct connection between the device and
+        third-party providers to provide movie metadata and AI features:
+      </p>
+      <ul className="list-disc ml-8">
+        <li>
+          <strong>TMDB:</strong> Movie and TV metadata is fetched using a
+          free-tier API key.
+        </li>
+        <li>
+          <strong>AI Features (Optional):</strong> If AI features are enabled,
+          users provide their own Groq AI API key.
+        </li>
+      </ul>
+      <p>
+        <strong>Security Note:</strong> User-provided API keys are stored
+        securely on the device only. Keys are never uploaded, logged, or shared
+        by the application, and AI requests are sent directly from the device to
+        the provider.
       </p>
 
-      <h2 className="text-2xl mt-5">7. Changes to This Policy</h2>
+      <h2 className="text-2xl mt-5 font-semibold">3. Location Privacy</h2>
       <p>
-        This Privacy Policy may be updated occasionally. Any changes will be
-        reflected in the app and on the policy page.
+        THEATER does not track location via IP address or GPS. Users manually
+        select a region within the application to see local content. This
+        selection is stored only on the local device.
       </p>
 
-      <h2 className="text-2xl mt-5">8. Contact Us</h2>
+      <h2 className="text-2xl mt-5 font-semibold">
+        4. Advertising & Monetization
+      </h2>
+      <p>THEATER is a non-monetized project:</p>
+      <ul className="list-disc ml-8">
+        <li>No advertisements are displayed anywhere in the app.</li>
+        <li>No third-party tracking scripts or analytics are utilized.</li>
+        <li>No user data is sold or shared for marketing purposes.</li>
+      </ul>
+
+      <h2 className="text-2xl mt-5 font-semibold">
+        5. Data Retention & Deletion
+      </h2>
       <p>
-        If you have any questions, contact us at: Email:{" "}
-        <strong>la.curations@gmail.com</strong> Website:{" "}
-        <a href="https://lacurations.vercel.app">
+        Since all data is stored locally, users maintain complete control over
+        the information. Data, including the Diary and API keys, can be deleted
+        at any time by:
+      </p>
+      <ul className="list-disc ml-8">
+        <li>Clearing the application storage in device settings.</li>
+        <li>Uninstalling the application.</li>
+      </ul>
+
+      <h2 className="text-2xl mt-5 font-semibold">6. Children’s Privacy</h2>
+      <p>
+        THEATER does not knowingly collect or maintain any data from any users,
+        including children.
+      </p>
+
+      <h2 className="text-2xl mt-5 font-semibold">7. Contact Information</h2>
+      <p>
+        For questions regarding this privacy policy or application
+        functionality:
+        <br />
+        Email: <strong>la.curations@gmail.com</strong>
+        <br />
+        Website:{" "}
+        <a
+          href="https://lacurations.vercel.app"
+          className="text-blue-600 underline text-sm"
+        >
           https://lacurations.vercel.app
         </a>
       </p>
 
-      <p>Thank you for using Theater!</p>
+      <p className="mt-10 italic text-gray-600">Thank you for using THEATER.</p>
     </div>
   );
 };
