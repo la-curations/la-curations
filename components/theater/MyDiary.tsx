@@ -9,10 +9,10 @@ const MyDiary = () => {
             <h2 className="text-4xl bg-clip-text text-transparent bg-linear-to-r from-[#8e27ee] to-[#FF5E87] font-black">
               My Diary
             </h2>
-            <p className="text-lg lg:text-2xl mb-6 text-[#fa5eff] opacity-70">
+            <p className="text-lg lg:text-2xl mb-6 text-[#ffffff] opacity-70">
               Cinema tracker
             </p>
-            <p className="text-lg lg:text-xl text-white/70 leading-relaxed">
+            <p className="text-lg lg:text-xl text-white/40 leading-relaxed">
               Track your movie and TV show history and current watch progress
               with personal notes, ratings and emotional emojis.
             </p>

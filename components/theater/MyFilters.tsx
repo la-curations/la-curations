@@ -16,10 +16,10 @@ const MyFilters = () => {
             <h2 className="text-4xl bg-clip-text text-transparent bg-linear-to-r from-[#8e27ee] to-[#FF5E87] font-black">
               My Filters
             </h2>
-            <p className="text-lg lg:text-2xl mb-6 text-[#fa5eff] opacity-70">
+            <p className="text-lg lg:text-2xl mb-6 text-[#ffffff] opacity-70">
               Customize your own screen
             </p>
-            <p className="text-lg lg:text-xl text-white/70 leading-relaxed">
+            <p className="text-lg lg:text-xl text-white/40 leading-relaxed">
               Save your own filters and customize a whole screen with your saved
               filters in the My Filters screen
             </p>

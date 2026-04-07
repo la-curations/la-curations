@@ -79,12 +79,39 @@ const AIFeatures = () => {
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1
+      prevIndex === 0 ? carouselItems.length - 1 : prevIndex - 1,
     );
   };
 
   const handleNext = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+  };
+
+  // Swipe logic
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      handleNext();
+    } else if (isRightSwipe) {
+      handlePrev();
+    }
   };
 
   return (
@@ -133,14 +160,14 @@ const AIFeatures = () => {
           {/* Navigation buttons for large screens - positioned on sides */}
           <button
             onClick={handlePrev}
-            className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 z-20 p-3 rounded-full bg-[#ffffff1d] border-[#ffffff16] border hover:opacity-80 transition-opacity"
+            className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-[#ffffff1d] border-[#ffffff16] border hover:opacity-80 transition-opacity cursor-pointer"
             aria-label="Previous"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={handleNext}
-            className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 z-20 p-3 rounded-full bg-[#ffffff1d] border-[#ffffff16] border hover:opacity-80 transition-opacity"
+            className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-[#ffffff1d] border-[#ffffff16] border hover:opacity-80 transition-opacity cursor-pointer"
             aria-label="Next"
           >
             <ChevronRight className="w-6 h-6 text-white" />
@@ -150,6 +177,9 @@ const AIFeatures = () => {
             className="mx-auto mt-10 lg:mt-30 relative overflow-hidden"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
           >
             <div
               className="flex transition-transform duration-500 ease-in-out"
@@ -169,10 +199,10 @@ const AIFeatures = () => {
                   />
 
                   <div className="max-w-[80%] mx-auto">
-                    <p className="text-2xl lg:text-4xl text-center lg:text-left font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-l from-[#ffffff18] to-white">
+                    <p className="text-2xl mb-5 lg:text-4xl text-center lg:text-left font-extrabold mt-2 bg-clip-text text-transparent bg-gradient-to-l from-[#ffffff18] to-white">
                       {item.title}
                     </p>
-                    <p className="text-lg text-center lg:text-left lg:text-2xl text-[#a5a1d2] leading-relaxed">
+                    <p className="text-lg text-center lg:text-left lg:text-2xl text-[#a5a1d2]">
                       {item.description}
                     </p>
                   </div>
