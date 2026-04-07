@@ -10,7 +10,7 @@ interface ToastProps {
 const Toast = ({ isVisible, message }: ToastProps) => {
   return (
     <div
-      className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-100 transition-all duration-500 ease-out ${
+      className={`fixed max-w-[85vw] md:max-w-[400px] w-full bottom-10 left-1/2 -translate-x-1/2 z-100 transition-all duration-500 ease-out ${
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-10 pointer-events-none"

@@ -9,12 +9,11 @@ import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
 import MyDiary from "@/components/theater/MyDiary";
-import Waitlist from "@/components/theater/Waitlist";
 
 export const metadata: Metadata = {
   title: "Theater",
   description:
-    "Discover 'Theater' by LA Curations, the ultimate AI-powered movie and TV tracker. Ad-free, private, and smart streaming recommendations for cinema lovers.",
+    "Discover 'Theater' by LA Curations, the ultimate AI-powered movie and TV tracker. now available for pre-registration on Google Play Store. Ad-free, private, and smart streaming recommendations for cinema lovers.",
   keywords: [
     "Theater by LA Curations",
     "Theater App",
@@ -96,6 +95,10 @@ export default function Theater() {
       availability: "https://schema.org/InStock",
     },
     genre: "Entertainment",
+    installUrl: "https://play.google.com/store/apps/details?id=com.lacurations.theater&hl=en_IN",
+    sameAs: [
+      "https://play.google.com/store/apps/details?id=com.lacurations.theater&hl=en_IN"
+    ]
   };
 
   const breadcrumbLd = {
@@ -145,7 +148,6 @@ export default function Theater() {
         {/* <MySpace /> */}
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
-        <Waitlist />
         <Footer />
         <div className="bg-linear-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
       </main>
