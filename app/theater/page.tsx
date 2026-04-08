@@ -9,6 +9,10 @@ import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
 import MyDiary from "@/components/theater/MyDiary";
+import MySpace from "@/components/theater/MySpace";
+import MyCalendar from "@/components/theater/MyCalendar";
+import MyWatchlists from "@/components/theater/MyWatchlists";
+import InstagramStories from "@/components/theater/InstagramStories";
 
 export const metadata: Metadata = {
   title: "Theater",
@@ -95,10 +99,11 @@ export default function Theater() {
       availability: "https://schema.org/InStock",
     },
     genre: "Entertainment",
-    installUrl: "https://play.google.com/store/apps/details?id=com.lacurations.theater&hl=en_IN",
+    installUrl:
+      "https://play.google.com/store/apps/details?id=com.lacurations.theater&hl=en_IN",
     sameAs: [
-      "https://play.google.com/store/apps/details?id=com.lacurations.theater&hl=en_IN"
-    ]
+      "https://play.google.com/store/apps/details?id=com.lacurations.theater&hl=en_IN",
+    ],
   };
 
   const breadcrumbLd = {
@@ -146,6 +151,9 @@ export default function Theater() {
         <MyFilters />
         <MyDiary />
         {/* <MySpace /> */}
+        {/* <MyCalendar /> */}
+        {/* <MyWatchlists /> */}
+        {/* <InstagramStories /> */}
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
         <Footer />

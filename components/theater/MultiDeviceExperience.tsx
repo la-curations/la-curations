@@ -3,7 +3,7 @@ import React from "react";
 
 const MultiDeviceExperience = () => {
   return (
-    <section className="relative w-full py-20 lg:py-32 px-4 lg:px-8 overflow-hidden">
+    <section className="relative w-full py-32 lg:py-64 px-4 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Image

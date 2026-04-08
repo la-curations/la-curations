@@ -1,28 +1,29 @@
 import Image from "next/image";
 
-const MyDiary = () => {
+const MySpace = () => {
   return (
     <section className="relative w-full py-20 lg:py-32 px-4 lg:px-8 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="text-center lg:text-left lg:order-1">
+          <div className="text-center lg:text-left lg:order-2">
             <h2 className="text-4xl bg-clip-text text-transparent bg-linear-to-r from-[#8e27ee] to-[#FF5E87] font-black">
-              My Diary
+              My Space
             </h2>
             <p className="text-lg lg:text-2xl mb-6 text-[#ffffff] opacity-70">
-              Cinema tracker
+              Your cinematic HQ
             </p>
             <p className="text-lg lg:text-xl text-white/40 leading-relaxed">
-              Track your movie and TV show history and current watch progress
-              with personal notes, ratings and emotional emojis.
+              Personalize everything from your region and spoken languages to
+              your preferred OTT platforms. See popular and upcoming releases
+              tailored specifically for you.
             </p>
           </div>
           <Image
-            src="/assets/images/theater/F2.webp"
-            alt="My Diary - Track your movie and TV show history and current watch progress"
+            src="/assets/images/theater/F3.png"
+            alt="My Space - Personalization settings"
             width={400}
             height={400}
-            className="max-w-[80%] mx-auto object-contain relative z-10 lg:order-2"
+            className="max-w-[80%] mx-auto object-contain relative z-10 lg:order-1"
           />
         </div>
       </div>
@@ -30,4 +31,4 @@ const MyDiary = () => {
   );
 };
 
-export default MyDiary;
+export default MySpace;
