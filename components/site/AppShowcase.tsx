@@ -43,9 +43,6 @@ const AppShowcase = () => {
             height={200}
             className="object-contain w-[70%] lg:w-[50%]"
           />
-          <p className="text-sm lg:text-2xl bg-clip-text text-transparent bg-linear-to-r from-[#306bff] to-[#ff16d0]">
-            AI-Powered Smarter Streaming
-          </p>
         </div>
         <img
           src="/assets/images/LA/curve.webp"

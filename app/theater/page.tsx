@@ -150,10 +150,10 @@ export default function Theater() {
         <AndMore />
         <MyFilters />
         <MyDiary />
-        {/* <MySpace /> */}
-        {/* <MyCalendar /> */}
-        {/* <MyWatchlists /> */}
-        {/* <InstagramStories /> */}
+        <MySpace />
+        <MyCalendar />
+        <MyWatchlists />
+        <InstagramStories />
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
         <Footer />
