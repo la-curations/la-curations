@@ -6,7 +6,7 @@ const MyCalendar = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <Image
-            src="/assets/images/theater/MyCalendar.png"
+            src="/assets/images/theater/F4.webp"
             alt="My Calendar - Release notifications and schedule"
             width={400}
             height={400}
@@ -21,8 +21,8 @@ const MyCalendar = () => {
             </p>
             <p className="text-lg lg:text-xl text-white/40 leading-relaxed">
               Schedule released movies or get notified for upcoming ones. Manage
-              your cinematic timeline with precision and get timely notifications
-              sent directly to your device.
+              your cinematic timeline with precision and get timely
+              notifications sent directly to your device.
             </p>
           </div>
         </div>

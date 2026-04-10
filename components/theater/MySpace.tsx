@@ -19,7 +19,7 @@ const MySpace = () => {
             </p>
           </div>
           <Image
-            src="/assets/images/theater/F3.png"
+            src="/assets/images/theater/F3.webp"
             alt="My Space - Personalization settings"
             width={400}
             height={400}

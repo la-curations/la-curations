@@ -1,23 +1,18 @@
 import Hero from "@/components/theater/Hero";
 import PersonalizedCinemaCompanion from "@/components/theater/PersonalizedCinemaCompanion";
 import AIFeatures from "@/components/theater/AIFeatures";
-import AndMore from "@/components/theater/AndMore";
-import MyFilters from "@/components/theater/MyFilters";
+import StartWatching from "@/components/theater/StartWatching";
+import MoreFeatures from "@/components/theater/MoreFeatures";
 import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
 import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
 import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
-import MyDiary from "@/components/theater/MyDiary";
-import MySpace from "@/components/theater/MySpace";
-import MyCalendar from "@/components/theater/MyCalendar";
-import MyWatchlists from "@/components/theater/MyWatchlists";
-import InstagramStories from "@/components/theater/InstagramStories";
 
 export const metadata: Metadata = {
-  title: "Theater",
+  title: "Theater | AI Movie & TV Tracker | Stop Scrolling, Start Watching",
   description:
-    "Discover 'Theater' by LA Curations, the ultimate AI-powered movie and TV tracker. now available for pre-registration on Google Play Store. Ad-free, private, and smart streaming recommendations for cinema lovers.",
+    "Theater by LA Curations: The ultimate AI-powered movie and TV tracker. Feature-rich cinema diary, advanced search mode, personalized streaming recommendations, and poster lab. Ad-free, private, and smart.",
   keywords: [
     "Theater by LA Curations",
     "Theater App",
@@ -86,10 +81,8 @@ export default function Theater() {
     operatingSystem: "Android (Mobile, Tablet, TV), iOS",
     applicationCategory: "EntertainmentApplication",
     applicationSubCategory: "Movie & TV Tracker",
-    description:
-      "A permanently free, ad-free, and private AI-powered movie tracker. No tracking, no data collection, and no hidden fees—ever.",
     featureList:
-      "AI Recommendations, Cross-platform Sync, Watchlist Management, Ad-free Experience",
+      "AI Search Mode, Personalized Recommendations (My Next Watch), Cinema Chat, Theater AI Insights, Watchlist Analytics, AI Content Comparison, Advanced Dynamic Filters, Cinema Diary & History Tracker, Personal Cinematic HQ, Release Notifications, Poster Lab Social Sharing",
     screenshot:
       "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
     offers: {
@@ -145,15 +138,17 @@ export default function Theater() {
       />
       <main className="relative overflow-x-hidden bg-[#000013]">
         <Hero />
+        <StartWatching />
+        <div className="sr-only">
+          <h2>Start Watching your next favorite movie</h2>
+          <p>
+            Stop scrolling and let Theater AI find the perfect content for you
+            based on your unique taste and mood.
+          </p>
+        </div>
         <PersonalizedCinemaCompanion />
         <AIFeatures />
-        <AndMore />
-        <MyFilters />
-        <MyDiary />
-        <MySpace />
-        <MyCalendar />
-        <MyWatchlists />
-        <InstagramStories />
+        <MoreFeatures />
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
         <Footer />

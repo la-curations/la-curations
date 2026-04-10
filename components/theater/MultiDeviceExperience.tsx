@@ -15,9 +15,9 @@ const MultiDeviceExperience = () => {
           />
 
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl lg:text-5xl relative z-10 font-black text-white mb-6 flex flex-col items-center lg:items-start gap-2">
+            <h2 className="text-3xl lg:text-5xl relative z-10 font-black text-white mb-6 flex flex-col items-center gap-2">
               <span>Get the</span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#AA4EFF] to-[#FF5E87]">
+              <span className="bg-clip-text text-transparent bg-linear-to-r from-[#AA4EFF] to-[#FF5E87]">
                 Theater Experience
               </span>
               <span>in multiple platforms</span>

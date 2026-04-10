@@ -16,14 +16,14 @@ const freehand = Freehand({
 
 const carouselItems = [
   {
-    image: "/assets/images/theater/AI1.webp",
+    image: "/assets/images/theater/AI2.webp",
     title: "AI Search Mode",
     description:
       "Search with partial title, story you remember, or whatever. Get the Best Match and more.",
     alt: "AI Search Mode - Search with partial title, story you remember, or whatever. Get the Best Match and more.",
   },
   {
-    image: "/assets/images/theater/AI2.webp",
+    image: "/assets/images/theater/AI1.webp",
     title: "My Next Watch",
     description:
       "Theater AI will find your cinema taste and you will get the recommendations of your taste.",
