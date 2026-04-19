@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="bg-white text-black mx-auto font-serif p-5 lg:p-20 flex flex-col gap-2">
       <h1 className="text-5xl font-bold mb-4">Privacy Policy</h1>
-      <p>Effective Date: April 4, 2026</p>
+      <p>Effective Date: April 19, 2026</p>
 
       <p>
         <strong>THEATER</strong> is a movie and TV discovery application. The
@@ -53,6 +53,24 @@ const PrivacyPolicy = () => {
           language settings used for content customization.
         </li>
       </ul>
+      <p>
+        <strong>Cloud Synchronization:</strong> If you choose to enable Google
+        Drive sync, our app will request access to your Google Drive account
+        (specifically the drive.file scope). This is used solely to create a
+        dedicated folder for Theater backups and to store your profile image. We
+        do not access, read, or modify any other files in your Google Drive.
+      </p>
+      <p>
+        <strong>Google API Service User Data Policy:</strong> Theater's use of
+        information received from Google APIs will adhere to the{" "}
+        <a
+          href="https://developers.google.com/terms/api-services-user-data-policy"
+          className="text-blue-600 underline text-sm"
+        >
+          Google API Service User Data Policy
+        </a>
+        , including the Limited Use requirements.
+      </p>
 
       <h2 className="text-2xl mt-5 font-semibold">
         2. Third-Party Data & API Keys
