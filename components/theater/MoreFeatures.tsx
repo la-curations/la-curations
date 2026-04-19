@@ -52,12 +52,12 @@ const features: Feature[] = [
     alt: "Poster Lab - Create and share beautiful cinematic posters on social media",
   },
   {
-    title: "My Space",
-    subtitle: "Your cinematic HQ",
+    title: "Cloud Sync",
+    subtitle: "Always in sync",
     description:
-      "Personalize everything from your region and spoken languages to your preferred OTT platforms. See popular and upcoming releases tailored specifically for you.",
+      "Keep your diary, watchlists, and settings synchronized across all your devices using your personal Google Drive. Your data stays in your control, securely backed up in the cloud.",
     image: "/assets/images/theater/F3.webp",
-    alt: "My Space - Personalization settings",
+    alt: "Cloud Sync - Synchronize movie data with Google Drive",
   },
 ];
 
