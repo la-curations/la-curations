@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "premium app",
   ],
   alternates: {
-    canonical: "https://lacurations.vercel.app/theater",
+    canonical: "https://www.lacurations.co.in/theater",
   },
   icons: {
     icon: "/assets/images/theater/theater64.png",
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     title: "Theater App",
     description:
       "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
-    url: "https://lacurations.vercel.app/theater",
+    url: "https://www.lacurations.co.in/theater",
     images: [
       {
-        url: "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
+        url: "https://www.lacurations.co.in/assets/images/theater/theater-og-image.png",
         width: 1200,
         height: 630,
         alt: "Theater App - AI-Powered Smarter Streaming",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     site: "@lacurations",
     creator: "@lacurations",
     images: [
-      "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
+      "https://www.lacurations.co.in/assets/images/theater/theater-og-image.png",
     ],
   },
   robots: {
@@ -84,7 +84,7 @@ export default function Theater() {
     featureList:
       "AI Search Mode, Personalized Recommendations (My Next Watch), Cinema Chat, Theater AI Insights, Watchlist Analytics, AI Content Comparison, Advanced Dynamic Filters, Cinema Diary & History Tracker, Personal Cinematic HQ, Release Notifications, Poster Lab Social Sharing",
     screenshot:
-      "https://lacurations.vercel.app/assets/images/theater/theater-og-image.png",
+      "https://www.lacurations.co.in/assets/images/theater/theater-og-image.png",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -107,13 +107,13 @@ export default function Theater() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://lacurations.vercel.app",
+        item: "https://www.lacurations.co.in",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Theater",
-        item: "https://lacurations.vercel.app/theater",
+        item: "https://www.lacurations.co.in/theater",
       },
     ],
   };

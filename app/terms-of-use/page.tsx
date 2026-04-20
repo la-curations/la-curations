@@ -84,8 +84,8 @@ export default function TermsOfUse() {
       <p>
         If you have questions about these Terms of Use, you can contact: Email:
         la.curations@gmail.com Website:{" "}
-        <a href="https://lacurations.vercel.app">
-          https://lacurations.vercel.app
+        <a href="https://www.lacurations.co.in">
+          https://www.lacurations.co.in
         </a>
       </p>
     </main>

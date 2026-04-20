@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://lacurations.vercel.app/sitemap.xml",
+    sitemap: "https://www.lacurations.co.in/sitemap.xml",
   };
 }

@@ -72,8 +72,8 @@ export default function Privacy() {
         {" "}
         If you have questions about this Privacy Policy or about LA Curations,
         you can contact: Email: la.curations@gmail.com Website:{" "}
-        <a href="https://lacurations.vercel.app">
-          https://lacurations.vercel.app
+        <a href="https://www.lacurations.co.in">
+          https://www.lacurations.co.in
         </a>
       </p>
     </main>
