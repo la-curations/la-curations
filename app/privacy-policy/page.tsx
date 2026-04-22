@@ -52,7 +52,8 @@ export default function Privacy() {
         {" "}
         The LA Curations website may be hosted using third-party infrastructure
         providers (such as Vercel) for content delivery and uptime. LA Curations
-        does not control how these providers process infrastructure-level data.{" "}
+        does not control how these providers process infrastructure-level
+        data.{" "}
       </p>{" "}
       <h2 className="text-xl font-bold">5. Children’s Privacy</h2>
       <p>
@@ -72,9 +73,7 @@ export default function Privacy() {
         {" "}
         If you have questions about this Privacy Policy or about LA Curations,
         you can contact: Email: la.curations@gmail.com Website:{" "}
-        <a href="https://www.lacurations.co.in">
-          https://www.lacurations.co.in
-        </a>
+        <a href="https://lacurations.co.in">https://lacurations.co.in</a>
       </p>
     </main>
   );

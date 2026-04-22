@@ -84,9 +84,7 @@ export default function TermsOfUse() {
       <p>
         If you have questions about these Terms of Use, you can contact: Email:
         la.curations@gmail.com Website:{" "}
-        <a href="https://www.lacurations.co.in">
-          https://www.lacurations.co.in
-        </a>
+        <a href="https://lacurations.co.in">https://lacurations.co.in</a>
       </p>
     </main>
   );

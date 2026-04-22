@@ -8,7 +8,7 @@ import FAQ from "@/components/site/FAQ";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.lacurations.co.in"),
+  metadataBase: new URL("https://lacurations.co.in"),
   title: "LA Curations - Curated for you",
   description:
     "LA Curations is an independent studio crafting premium, privacy-focused mobile apps. Experience ad-free apps like 'Theater' designed with a clean UI/UX and zero data collection.",
@@ -27,20 +27,20 @@ export const metadata: Metadata = {
     "No ads movie app",
   ],
   alternates: {
-    canonical: "https://www.lacurations.co.in",
+    canonical: "https://lacurations.co.in",
   },
   authors: [{ name: "LA Curations" }],
   openGraph: {
     title: "LA Curations",
     description:
       "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
-    url: "https://www.lacurations.co.in",
+    url: "https://lacurations.co.in",
     siteName: "LA Curations",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://www.lacurations.co.in/assets/images/LA/la-og-image.png",
+        url: "https://lacurations.co.in/assets/images/LA/la-og-image.png",
         width: 1200,
         height: 630,
         alt: "LA Curations - Independent App Studio",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
       "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
     site: "@lacurations",
     creator: "@lacurations",
-    images: ["https://www.lacurations.co.in/assets/images/LA/la-og-image.png"],
+    images: ["https://lacurations.co.in/assets/images/LA/la-og-image.png"],
   },
 };
 
@@ -78,8 +78,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "LA Curations",
-    url: "https://www.lacurations.co.in",
-    logo: "https://www.lacurations.co.in/logo.png",
+    url: "https://lacurations.co.in",
+    logo: "https://lacurations.co.in/logo.png",
     sameAs: [
       "https://x.com/lacurations",
       "https://instagram.com/lacurations",
@@ -120,7 +120,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "LA Curations",
-    url: "https://www.lacurations.co.in",
+    url: "https://lacurations.co.in",
   };
 
   const personJsonLd = {
@@ -129,7 +129,7 @@ export default function Home() {
     name: "Leo Antony",
     jobTitle: "Software Engineer",
     description: "Software Engineer and Founder of LA Curations.",
-    url: "https://www.lacurations.co.in",
+    url: "https://lacurations.co.in",
     sameAs: [
       "https://instagram.com/leoantony2002",
       "https://linkedin.com/in/leo-antony",

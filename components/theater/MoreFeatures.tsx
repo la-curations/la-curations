@@ -59,6 +59,14 @@ const features: Feature[] = [
     image: "/assets/images/theater/F3.webp",
     alt: "Cloud Sync - Synchronize movie data with Google Drive",
   },
+  {
+    title: "My Friends",
+    subtitle: "You are not alone",
+    description:
+      "Connect with friends to see what they're watching and compare your diary and watchlists",
+    image: "/assets/images/theater/F6.webp",
+    alt: "My Friends - Connect and compare movie taste with friends",
+  },
 ];
 
 const MoreFeatures = () => {

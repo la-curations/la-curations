@@ -141,10 +141,10 @@ const PrivacyPolicy = () => {
         <br />
         Website:{" "}
         <a
-          href="https://www.lacurations.co.in"
+          href="https://lacurations.co.in"
           className="text-blue-600 underline text-sm"
         >
-          https://www.lacurations.co.in
+          https://lacurations.co.in
         </a>
       </p>
 

@@ -10,7 +10,7 @@ const geologica = Geologica({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.lacurations.co.in"),
+  metadataBase: new URL("https://lacurations.co.in"),
   title: {
     default: "LA Curations - Curated for you",
     template: "%s | LA Curations",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "LA Curations",
     description:
       "Beautifully crafted, ad-free mobile experiences. No tracking, just pure design.",
-    url: "https://www.lacurations.co.in",
+    url: "https://lacurations.co.in",
     siteName: "LA Curations",
     locale: "en_US",
     type: "website",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     description: "Curated for you",
     site: "@lacurations",
     creator: "@lacurations",
-    images: ["https://www.lacurations.co.in/assets/images/LA/la-og-image.png"],
+    images: ["https://lacurations.co.in/assets/images/LA/la-og-image.png"],
   },
   verification: {
     other: {
