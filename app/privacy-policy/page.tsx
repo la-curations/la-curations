@@ -47,14 +47,6 @@ export default function Privacy() {
         permissions, and third-party services are disclosed within each app’s
         own Privacy Policy.{" "}
       </p>{" "}
-      <h2 className="text-xl font-bold">4. Third-Party Services</h2>
-      <p>
-        {" "}
-        The LA Curations website may be hosted using third-party infrastructure
-        providers (such as Vercel) for content delivery and uptime. LA Curations
-        does not control how these providers process infrastructure-level
-        data.{" "}
-      </p>{" "}
       <h2 className="text-xl font-bold">5. Children’s Privacy</h2>
       <p>
         {" "}

@@ -55,14 +55,7 @@ export default function TermsOfUse() {
         otherwise. You may not copy, reproduce, or redistribute website content
         without permission, except where allowed by law.
       </p>
-      <h2 className="text-xl font-bold">5. Third-Party Services</h2>
-      <p>
-        The website may be hosted or delivered using third-party infrastructure
-        providers (such as Vercel). LA Curations is not responsible for:
-        Temporary downtime Infrastructure-level data processing performed by
-        hosting providers
-      </p>
-      <h2 className="text-xl font-bold">6. Disclaimer</h2>
+      <h2 className="text-xl font-bold">5. Disclaimer</h2>
       <p>
         The website and its content are provided “as is”, without warranties of
         any kind. LA Curations makes no guarantees regarding: Accuracy or
