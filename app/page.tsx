@@ -14,8 +14,10 @@ export const metadata: Metadata = {
     "LA Curations is an independent studio crafting premium, privacy-focused mobile apps. Experience ad-free apps like 'Theater' designed with a clean UI/UX and zero data collection.",
   keywords: [
     "LA Curations",
+    "Theater",
     "Theater App",
     "independent developer",
+    "Leo Antony",
     "software studio",
     "premium apps",
     "Privacy focused apps",

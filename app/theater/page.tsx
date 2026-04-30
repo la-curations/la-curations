@@ -12,8 +12,9 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Theater | AI Movie & TV Tracker | Stop Scrolling, Start Watching",
   description:
-    "Theater by LA Curations: The ultimate AI-powered movie and TV tracker. Feature-rich cinema diary, advanced search mode, personalized streaming recommendations, and poster lab. Ad-free, private, and smart.",
+    "Theater by LA Curations: AI-powered personal cinema companion. Feature-rich cinema diary, advanced search mode, personalized streaming recommendations, and poster lab. Ad-free, private, and smart.",
   keywords: [
+    "Theater",
     "Theater by LA Curations",
     "Theater App",
     "AI curated streaming",
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://lacurations.co.in/theater",
   },
+  authors: [{ name: "LA Curations" }],
   icons: {
     icon: "/assets/images/theater/theater64.png",
     apple: "/assets/images/theater/theater64.png",
@@ -99,6 +101,49 @@ export default function Theater() {
     ],
   };
 
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "LA Curations",
+    url: "https://lacurations.co.in",
+    logo: "https://lacurations.co.in/logo.png",
+    sameAs: [
+      "https://x.com/lacurations",
+      "https://instagram.com/lacurations",
+      "https://threads.com/@lacurations",
+      "https://facebook.com/lacurations",
+    ],
+    description:
+      "An independent software studio building premium, privacy-focused applications like Theater. LA Curations crafts digital experiences with zero tracking and ad-free interfaces.",
+    foundingDate: "2026",
+    founder: {
+      "@type": "Person",
+      name: "Leo Antony",
+      jobTitle: "Software Engineer",
+      url: "https://linkedin.com/in/leo-antony",
+      sameAs: [
+        "https://instagram.com/leoantony2002",
+        "https://linkedin.com/in/leo-antony",
+        "https://www.facebook.com/leoantony2002",
+        "mailto:leoantony20025@gmail.com",
+      ],
+    },
+  };
+
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Leo Antony",
+    jobTitle: "Software Engineer",
+    description: "Software Engineer and Founder of LA Curations.",
+    url: "https://lacurations.co.in",
+    sameAs: [
+      "https://instagram.com/leoantony2002",
+      "https://linkedin.com/in/leo-antony",
+      "https://www.facebook.com/leoantony2002",
+    ],
+  };
+
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -126,8 +171,19 @@ export default function Theater() {
       />
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      {/* Identity Verification Links (Hidden but visible to crawlers) */}
+      <link rel="me" href="https://linkedin.com/in/leo-antony" />
+      <link rel="me" href="https://instagram.com/leoantony2002" />
       <Image
         src="/assets/images/theater/theater64.png"
         alt="Personalized Cinema Companion"
