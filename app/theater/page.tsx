@@ -5,6 +5,7 @@ import StartWatching from "@/components/theater/StartWatching";
 import MoreFeatures from "@/components/theater/MoreFeatures";
 import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
 import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
+import Socials from "@/components/theater/Socials";
 import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
@@ -207,6 +208,7 @@ export default function Theater() {
         <MoreFeatures />
         <MultiDeviceExperience />
         <ExperienceTheaterNow />
+        <Socials />
         <Footer />
         <div className="bg-linear-to-b from-transparent to-[#260030c1] absolute bottom-0 w-screen h-[400px] z-0"></div>
       </main>
