@@ -68,7 +68,7 @@ export default function Home() {
     },
     {
       q: "Which platforms is the Theater App on?",
-      a: "Theater is launching first on Android with universal support for Mobile, Tablet, and TV. An iOS version is currently in development.",
+      a: "Theater is available on Android with universal support for Mobile, Tablet, and TV. An iOS version is currently in development.",
     },
     {
       q: "Is LA Curations a team or individual?",

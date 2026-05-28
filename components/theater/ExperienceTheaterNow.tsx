@@ -8,6 +8,7 @@ import { joinWaitlist } from "@/app/actions/waitlist";
 
 const ExperienceTheaterNow = () => {
   const [showNotification, setShowNotification] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<
@@ -18,6 +19,11 @@ const ExperienceTheaterNow = () => {
 
   const trackInterest = (platform: string) => {
     // Show visual feedback
+    if (platform === "Google Play") {
+      setToastMessage("Redirecting to Google Play Store! Enjoy the app.");
+    } else {
+      setToastMessage("Launching soon! Thanks for showing interest.");
+    }
     setShowNotification(true);
     setTimeout(() => setShowNotification(false), 3000);
 
@@ -75,7 +81,7 @@ const ExperienceTheaterNow = () => {
       {/* Reusable Toast Notification */}
       <Toast
         isVisible={showNotification}
-        message="Launching soon! Thanks for showing interest."
+        message={toastMessage}
       />
 
       {/* Glass Waitlist Modal */}
@@ -188,11 +194,11 @@ const ExperienceTheaterNow = () => {
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
             onClick={() => trackInterest("Google Play")}
-            aria-label="Pre-register for Theater App on Google Play Store"
+            aria-label="Get Theater App on Google Play Store"
           >
             <Image
               src="/assets/images/theater/Play.png"
-              alt="Pre-register for Theater App on Google Play Store"
+              alt="Get Theater App on Google Play Store"
               width={250}
               height={70}
               className="w-[150px] h-[50px] lg:w-[250px] lg:h-[70px] object-contain relative z-10"

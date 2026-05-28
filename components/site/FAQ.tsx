@@ -5,7 +5,7 @@ const faqs = [
   },
   {
     q: "Which platforms are supported?",
-    a: "Theater is launching first on Android, with full support for Mobile, Tablet, and TV. An iOS version is also in development to ensure a seamless experience across all your favorite devices.",
+    a: "Theater is available on Android, with full support for Mobile, Tablet, and TV. An iOS version is currently in development to ensure a seamless experience across all your favorite devices.",
   },
   {
     q: "How is privacy handled?",

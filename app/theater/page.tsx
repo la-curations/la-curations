@@ -11,9 +11,9 @@ import { Metadata, Viewport } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Theater | AI Movie & TV Tracker | Stop Scrolling, Start Watching",
+  title: "Theater | AI Movie & TV Tracker | Available Now on Google Play",
   description:
-    "Theater by LA Curations: AI-powered personal cinema companion. Feature-rich cinema diary, advanced search mode, personalized streaming recommendations, and poster lab. Ad-free, private, and smart.",
+    "Theater by LA Curations: AI-powered personal cinema companion. Now available on Google Play! Feature-rich cinema diary, advanced search mode, personalized streaming recommendations, and poster lab. Ad-free, private, and smart.",
   keywords: [
     "Theater",
     "Theater by LA Curations",
@@ -41,24 +41,24 @@ export const metadata: Metadata = {
     shortcut: "/assets/images/theater/theater64.png",
   },
   openGraph: {
-    title: "Theater App",
+    title: "Theater App - Available Now on Google Play",
     description:
-      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
+      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Now live on the Google Play Store! Experience the next level of streaming with Theater App. AI-curated content just for you.",
     url: "https://lacurations.co.in/theater",
     images: [
       {
         url: "https://lacurations.co.in/assets/images/theater/theater-og-image.png",
         width: 1200,
         height: 630,
-        alt: "Theater App - AI-Powered Smarter Streaming",
+        alt: "Theater App - Available Now on Google Play",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theater App",
+    title: "Theater App - Available Now on Google Play",
     description:
-      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Experience the next level of streaming with Theater App. AI-curated content just for you.",
+      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Now live on the Google Play Store! Experience the next level of streaming with Theater App. AI-curated content just for you.",
     site: "@lacurations",
     creator: "@lacurations",
     images: [
