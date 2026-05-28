@@ -5,6 +5,7 @@ import StartWatching from "@/components/theater/StartWatching";
 import MoreFeatures from "@/components/theater/MoreFeatures";
 import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
 import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
+import TheaterFAQ from "@/components/theater/TheaterFAQ";
 import Socials from "@/components/theater/Socials";
 import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
@@ -207,6 +208,7 @@ export default function Theater() {
         <AIFeatures />
         <MoreFeatures />
         <MultiDeviceExperience />
+        <TheaterFAQ />
         <ExperienceTheaterNow />
         <Socials />
         <Footer />
