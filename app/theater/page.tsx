@@ -187,7 +187,7 @@ export default function Theater() {
       <link rel="me" href="https://linkedin.com/in/leo-antony" />
       <link rel="me" href="https://instagram.com/leoantony2002" />
       <Image
-        src="/assets/images/theater/theater64.png"
+        src="/assets/images/theater/theater512.png"
         alt="Personalized Cinema Companion"
         width={70}
         height={70}
