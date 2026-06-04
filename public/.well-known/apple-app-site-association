@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "55C86N4FW9.com.lacurations.theater",
+        "paths": [
+          "/theater/movie/*",
+          "/theater/tv/*",
+          "/theater/friends*"
+        ]
+      }
+    ]
+  }
+}
