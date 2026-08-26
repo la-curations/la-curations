@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "premium app",
   ],
   alternates: {
-    canonical: "https://lacurations.co.in/theater",
+    canonical: "https://theater.lacurations.co.in",
   },
   authors: [{ name: "LA Curations" }],
   icons: {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Theater App - Available Now on Google Play",
     description:
       "The Ultimate AI-Powered ad-free Movie & TV Tracker. Now live on the Google Play Store! Experience the next level of streaming with Theater App. AI-curated content just for you.",
-    url: "https://lacurations.co.in/theater",
+    url: "https://theater.lacurations.co.in",
     images: [
       {
         url: "https://lacurations.co.in/assets/images/theater/theater-og-image.png",
@@ -160,7 +160,7 @@ export default function Theater() {
         "@type": "ListItem",
         position: 2,
         name: "Theater",
-        item: "https://lacurations.co.in/theater",
+        item: "https://theater.lacurations.co.in",
       },
     ],
   };

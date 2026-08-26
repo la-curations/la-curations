@@ -24,7 +24,7 @@ const AppShowcase = () => {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-white to-transparent pointer-events-none"></div>
       </div>
       <a
-        href="/theater"
+        href="https://theater.lacurations.co.in"
         id="showcase"
         className="relative max-w-[90%] mx-auto lg:py-56 md:py-24 py-12 my-12 bg-[#000013] flex flex-col items-center justify-center rounded-[20px] lg:rounded-[40px]"
         aria-label="View Theater App - AI-Powered Smarter Streaming"
@@ -50,13 +50,13 @@ const AppShowcase = () => {
           className="absolute -bottom-px w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain rotate-180"
         />
       </a>
-      <Link
-        href="/theater"
+      <a
+        href="https://theater.lacurations.co.in"
         className="mx-auto max-max max-w-max lg:hidden px-6 py-3 text-xs bg-linear-to-r from-[#b162ff] to-[#ff16d0] text-white flex items-center justify-center rounded-[100px]"
         onClick={trackInterest}
       >
         Experience Now
-      </Link>
+      </a>
     </>
   );
 };

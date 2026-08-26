@@ -12,12 +12,12 @@ const Footer = () => {
       <div className="w-screen h-[1px] bg-gradient-to-r from-transparent via-[#c6c6c665] to-transparent"></div>
 
       <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-8 lg:p-20 pt-10 px-4">
-        <Link
-          href="/theater"
+        <a
+          href="https://theater.lacurations.co.in"
           className="text-sm font-medium text-gray-600 hover:text-black transition-colors"
         >
           Theater App
-        </Link>
+        </a>
         <Link
           href="/terms-of-use"
           className="text-sm font-medium text-gray-600 hover:text-black transition-colors"

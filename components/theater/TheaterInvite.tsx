@@ -36,7 +36,7 @@ const TheaterInvite = () => {
           >
             Get
           </p>
-          <Link href="/theater" className="relative w-[280px] lg:w-[400px] hover:opacity-80 transition-opacity">
+          <Link href="/" className="relative w-[280px] lg:w-[400px] hover:opacity-80 transition-opacity">
             <Image
               src="/assets/images/theater/theater-title.webp"
               alt="THEATER"
@@ -67,14 +67,14 @@ const TheaterInvite = () => {
       </div>
 
       {/* Branded Footer */}
-      <Link href="/" className="absolute bottom-10 left-0 right-0 flex items-center justify-center hover:opacity-60 transition-opacity">
+      <a href="https://lacurations.co.in" className="absolute bottom-10 left-0 right-0 flex items-center justify-center hover:opacity-60 transition-opacity">
         <Image
           src="/assets/images/theater/SplashSignature.png"
           alt="curated by LA"
           width={110}
           height={30}
         />
-      </Link>
+      </a>
     </div>
   );
 };

@@ -18,15 +18,18 @@ const Footer = () => {
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm lg:text-base text-white/60">
             <Link
-              href="/theater/privacy-policy"
+              href="/privacy-policy"
               className="hover:text-white/80 transition-colors"
             >
               Privacy Policy
             </Link>
             <span>|</span>
-            <Link href="/" className="hover:text-white/80 transition-colors">
+            <a
+              href="https://lacurations.co.in"
+              className="hover:text-white/80 transition-colors"
+            >
               LA Curations
-            </Link>
+            </a>
           </div>
         </div>
       </div>

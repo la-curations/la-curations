@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://lacurations.co.in";
+  const theaterUrl = "https://theater.lacurations.co.in";
   return [
     {
       url: baseUrl,
@@ -10,19 +11,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/theater`,
+      url: theaterUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/privacy-policy`,
+      url: `${theaterUrl}/privacy-policy`,
       lastModified: new Date("2026-01-02"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/theater/privacy-policy`,
+      url: `${baseUrl}/privacy-policy`,
       lastModified: new Date("2026-01-02"),
       changeFrequency: "monthly",
       priority: 0.7,

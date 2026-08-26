@@ -5,7 +5,7 @@ const apps = [
   {
     name: "Theater",
     description: "AI-powered smarter streaming.",
-    href: "/theater",
+    href: "https://theater.lacurations.co.in",
     icon: "/theater64.png",
     badge: "New",
   },
