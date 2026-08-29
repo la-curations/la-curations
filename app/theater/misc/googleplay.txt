@@ -1,0 +1,63 @@
+Experience cinema with finesse.
+
+THEATER is an AI-powered movie and TV tracker designed to help you stop scrolling and start watching. Whether you need a private movie diary, a watchlist, or personalized AI recommendations, THEATER is your personal cinema companion.
+
+
+The Feature Set
+
+🎬Advanced Discovery Engine
+Stop the endless scroll. Use precision filters to find exactly what you’re looking for. Filter by the advanced genre system, ratings, OTT streaming platforms, languages, cast, crew, and release dates.
+
+
+📂My Filters
+Efficiency meets elegance. Create and save custom search criteria for instant access to your personalized cinema results every time the app is opened.
+
+🧠AI-Powered Cinema Intelligence
+Experience the future of film discovery with state-of-the-art AI features:
+• Semantic Search: Find movies by describing partial memories or plot fragments.
+• Cinema Chat: Chat anything about movies & TV shows with AI LLM modals. Get recommendations for your taste, discuss the plot and do more.
+• Mood-Based Recommendations: Get suggestions that match your current emotional state.
+• Emotional Tone Analysis: Understand the "vibe" of a movie before you hit play.
+
+
+📔 My Diary
+Your personal cinema journal. Track your complete watch history with a private log.
+• Continue Watching: An intelligent tracker for TV shows and movies in progress, so you never lose your place.
+• Cinema Wrapped: Get beautiful, data-driven summaries of your monthly and yearly viewing habits.
+• Share the Vibe: Export your "Wrapped" insights into stunning, Instagram-ready graphics to show your followers your cinema journey.
+• Emotional Logging: Record personal ratings and private notes for every film you experience.
+• Review Sharing: Export your ratings, emotional emojis, and personal notes directly into high-fidelity graphics for your social stories.
+
+🧑‍🤝‍🧑Friends Network
+Sync your data into your own google drive and also connect your friends' diary & Watchlist to your device to see the similarities and more.
+
+🎨 Poster Lab
+Create stunning, custom-designed posters for any title in the "Watching," "Watched," or "Waiting" status. Specifically formatted for Instagram Stories and other social platforms.
+
+
+📅 My Calendar
+Never miss a premiere. Set reminders for upcoming movie releases and schedule viewing times for TV content already available.
+
+
+📑Dynamic Watchlists
+Organize future viewing with multiple, customizable personal watchlists.
+
+
+📲 Data Portability
+Your history remains truly personal. Export and import your Diary data via CSV files to keep your records safe or sync across your devices manually.
+
+
+Privacy First
+In an era of trackers, THEATER stands apart as a privacy-focused movie app.
+• No Accounts Required: Start using the app instantly without sign-ups.
+• No Ads or Trackers: A clean, distraction-free environment.
+• Zero Data Collection: We don’t see your diary; we don't collect your data.
+• Local Storage: All preferences and logs are stored securely on your device.
+
+Available in: English, French, Spanish, Portuguese, Indonesian, Japanese, Korean, Chinese, Tamil, Malayalam, Telugu, and Hindi.
+
+Curated For You
+THEATER is handcrafted for users who value premium design, powerful features, and a distraction-free experience. Optimized for Mobile, Foldables, and Tablets to ensure a cinematic feel on every screen.
+
+
+The last handcrafted app in the vibe coding era.
