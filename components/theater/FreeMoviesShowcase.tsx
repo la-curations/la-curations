@@ -79,40 +79,6 @@ const FreeMoviesShowcase = () => {
             );
           })}
         </div>
-
-        {/* Reel Preview Strip Banner */}
-        <div className="mt-12 rounded-3xl p-8 lg:p-12 bg-gradient-to-r from-white/[0.04] via-white/[0.02] to-white/[0.04] border border-white/10 backdrop-blur-xl flex flex-col lg:flex-row items-center justify-between gap-8">
-          <div className="flex items-center gap-4">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#f863da] to-[#8aabff] flex items-center justify-center shrink-0 shadow-lg shadow-[#f863da]/20">
-              <Clapperboard className="w-7 h-7 text-white" />
-            </div>
-            <div>
-              <h4 className="text-lg lg:text-xl font-bold text-white">
-                Discover Through Cinematic Reels
-              </h4>
-              <p className="text-sm text-white/60 font-light mt-1">
-                A seamless TikTok/Shorts-style feed dedicated exclusively to cinema previews and trailers.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 shrink-0">
-            <div className="flex -space-x-2 overflow-hidden">
-              <div className="inline-block h-8 w-8 rounded-full ring-2 ring-[#000013] bg-purple-600/80 flex items-center justify-center text-[10px] font-bold text-white">
-                4K
-              </div>
-              <div className="inline-block h-8 w-8 rounded-full ring-2 ring-[#000013] bg-pink-600/80 flex items-center justify-center text-[10px] font-bold text-white">
-                HD
-              </div>
-              <div className="inline-block h-8 w-8 rounded-full ring-2 ring-[#000013] bg-blue-600/80 flex items-center justify-center text-[10px] font-bold text-white">
-                CC
-              </div>
-            </div>
-            <span className="text-xs text-white/70 font-medium ml-2">
-              Free Forever • 100% Legal
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
