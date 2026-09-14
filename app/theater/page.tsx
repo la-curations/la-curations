@@ -8,6 +8,8 @@ import Socials from "@/components/theater/Socials";
 import Footer from "@/components/theater/Footer";
 import { Metadata, Viewport } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import { BookOpen } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Theater | AI Movie & TV Tracker | Free Movies & Live TV | Available Now on Google Play",
@@ -197,14 +199,27 @@ export default function Theater() {
       {/* Identity Verification Links (Hidden but visible to crawlers) */}
       <link rel="me" href="https://linkedin.com/in/leo-antony" />
       <link rel="me" href="https://instagram.com/leoantony2002" />
-      <Image
-        src="/assets/images/theater/theater512.png"
-        alt="Theater: Your Personal Cinema Companion"
-        width={70}
-        height={70}
-        className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px] object-contain absolute top-8 left-8 z-10"
-        priority
-      />
+      <div className="absolute top-6 left-6 right-6 lg:left-12 lg:right-12 z-30 flex items-center justify-between pointer-events-none">
+        <Link href="/" className="pointer-events-auto flex items-center gap-3 group">
+          <Image
+            src="/assets/images/theater/theater512.png"
+            alt="Theater: Your Personal Cinema Companion"
+            width={70}
+            height={70}
+            className="w-[48px] h-[48px] xl:w-[64px] xl:h-[64px] object-contain drop-shadow-md group-hover:scale-105 transition-transform"
+            priority
+          />
+        </Link>
+        <div className="pointer-events-auto flex items-center gap-3">
+          <Link
+            href="/guide"
+            className="px-4 py-2 rounded-full text-xs sm:text-sm font-semibold text-white/90 bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-md transition-all duration-300 flex items-center gap-2 hover:border-[#FF5E87]/50 shadow-lg hover:shadow-[0_0_20px_rgba(255,94,135,0.25)]"
+          >
+            <BookOpen className="w-3.5 h-3.5 text-[#FF5E87]" />
+            <span>User Guide</span>
+          </Link>
+        </div>
+      </div>
       <main className="relative overflow-x-clip bg-[#000013]">
         <Hero />
         <StartWatching />

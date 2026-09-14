@@ -24,6 +24,13 @@ const Footer = () => {
               Privacy Policy
             </Link>
             <span>|</span>
+            <Link
+              href="/guide"
+              className="hover:text-white transition-colors text-[#FF5E87] font-medium"
+            >
+              User Guide
+            </Link>
+            <span>|</span>
             <a
               href="https://lacurations.co.in"
               className="hover:text-white/80 transition-colors"
