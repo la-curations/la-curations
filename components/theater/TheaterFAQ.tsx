@@ -10,28 +10,32 @@ interface FAQItem {
 
 const faqs: FAQItem[] = [
   {
-    question: "Is Theater really free and ad-free?",
-    answer: "Yes, absolutely. Because Theater is built on a serverless local architecture, there are zero centralized database or hosting costs to maintain. Theater passes this advantage directly to you: no ads, no hidden trackers, no subscription tiers, and no payments—ever.",
+    question: "What does Theater offer?",
+    answer: "Theater is an all-in-one entertainment app combining three major experiences into a single, distraction-free interface: Cinema Intelligence (AI plot search, discovery, and personal watch diaries), Free Cinema (curated full-length movies and vertical cinematic reels), and Live TV (IPTV television streaming with channel dial navigation).",
+  },
+  {
+    question: "How does Live TV work?",
+    answer: "Theater Live is a lightweight, high-performance IPTV streaming player. You can import your own M3U playlists or explore public broadcasts. It features tactile vertical channel surfing, an interactive TV channel dial, aspect ratio controls, and landscape full-screen mode.",
+  },
+  {
+    question: "Are the Free movies legal and truly free?",
+    answer: "Yes, 100%. All full-length films and cinematic reels in Theater are legally licensed and curated from public domain sources and authorized streaming providers. There are no paywalls, hidden fees, or subscriptions.",
+  },
+  {
+    question: "Is Theater really ad-free and privacy-focused?",
+    answer: "Yes, completely. Theater requires zero accounts or logins, employs zero advertising or tracking SDKs, and never collects or sells your viewing data. Everything stays on your local device and private personal cloud.",
   },
   {
     question: "How does the serverless/no-backend architecture work?",
-    answer: "Unlike standard movie trackers that upload your data to corporate servers, Theater runs entirely on your local device. It utilizes your device's secure local storage to log your diaries, watchlists, and custom filters, keeping your data strictly in your hands. For cloud backup and cross-device syncing, you can connect your own personal Google Drive to act as a secure, private cloud server.",
+    answer: "Unlike standard streaming and tracking platforms that harvest your profile on centralized corporate databases, Theater runs locally on your device. For cloud backup and cross-device sync, it communicates directly with your personal Google Drive or Trakt account.",
   },
   {
-    question: "Why do I need to bring my own GROQ AI key?",
-    answer: "Theater includes powerful AI capabilities such as AI Search Mode, Cinema Chat, and the Next Watch module. To prevent any middleman or corporate server from logging your AI queries, Theater connects directly from your device to the AI service. You simply plug in your own free GROQ API key.",
-  },
-  {
-    question: "How does syncing work across devices without a server?",
-    answer: "For seamless cross-device synchronization, Theater establishes direct secure pathways to your personal Google Drive account. Your Google Drive effectively acts as your own private cloud server, so your sync files stay encrypted and under your ownership.",
-  },
-  {
-    question: "How do serverless socials work?",
-    answer: "You can easily connect and compare cinematic journeys with friends. By sharing your Google Drive sync pathways directly, Theater maps and highlights shared watchlists and diary logs without passing any data through a centralized social network database.",
+    question: "Which languages are supported?",
+    answer: "Theater is globally accessible and fully localized across 17 languages: English, Spanish, French, German, Portuguese, Russian, Turkish, Vietnamese, Indonesian, Japanese, Korean, Chinese, Latin, Hindi, Tamil, Malayalam, and Telugu.",
   },
   {
     question: "Which platforms are currently supported?",
-    answer: "Theater has launched on Android with comprehensive, universal support for Mobile, Tablet, and TV interfaces. An iOS version is currently in development.",
+    answer: "Theater is available on Android with universal, fluid optimization for smartphones, foldable devices, tablets, and Android TV. An iOS version is currently in active development.",
   },
 ];
 
@@ -49,7 +53,7 @@ const TheaterFAQ = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-6xl font-black text-white tracking-tight">
             Frequently Asked{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#8aabff] to-[#f863da]">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#AA4EFF] to-[#FF5E87]">
               Questions
             </span>
           </h2>

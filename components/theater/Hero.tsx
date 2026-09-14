@@ -18,12 +18,12 @@ const Hero = () => {
         <p
           className={`${waterFall.className} text-4xl lg:text-6xl leading-[1.2] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8aabff] to-[#f863da]`}
         >
-          Discover cinema like never before
+          Experience cinema with finesse
         </p>
         <h1 className="w-full flex justify-center">
           <Image
             src={theaterTitle}
-            alt="Theater by LA Curations - AI Movie & TV Tracker"
+            alt="Theater by LA Curations - AI Movie & TV Tracker with Free Movies & Live TV"
             className="object-contain w-[90%] lg:w-[50%]"
             priority
           />

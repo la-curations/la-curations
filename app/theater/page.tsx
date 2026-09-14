@@ -1,8 +1,6 @@
 import Hero from "@/components/theater/Hero";
-import PersonalizedCinemaCompanion from "@/components/theater/PersonalizedCinemaCompanion";
-import AIFeatures from "@/components/theater/AIFeatures";
 import StartWatching from "@/components/theater/StartWatching";
-import MoreFeatures from "@/components/theater/MoreFeatures";
+import ModeSwitcherSection from "@/components/theater/ModeSwitcherSection";
 import MultiDeviceExperience from "@/components/theater/MultiDeviceExperience";
 import ExperienceTheaterNow from "@/components/theater/ExperienceTheaterNow";
 import TheaterFAQ from "@/components/theater/TheaterFAQ";
@@ -12,18 +10,25 @@ import { Metadata, Viewport } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Theater | AI Movie & TV Tracker | Available Now on Google Play",
+  title: "Theater | AI Movie & TV Tracker | Free Movies & Live TV | Available Now on Google Play",
   description:
-    "Theater by LA Curations: AI-powered personal cinema companion. Now available on Google Play! Feature-rich cinema diary, advanced search mode, personalized streaming recommendations, and poster lab. Ad-free, private, and smart.",
+    "Theater by LA Curations: The privacy-first entertainment SuperApp. Stream live IPTV channels with instant TV dial surfing, watch curated free full-length movies and vertical reels, and track your cinema journey with AI discovery and private diaries. 100% ad-free and available in 17 languages.",
   keywords: [
     "Theater",
+    "Theater SuperApp",
     "Theater by LA Curations",
     "Theater App",
-    "AI curated streaming",
-    "AI recommendations",
-    "LA Curations Theater",
-    "movie tracker",
+    "Live TV App",
+    "IPTV Player",
+    "Free Movies Streaming",
+    "Cinema Reels",
+    "AI movie tracker",
     "TV show tracker",
+    "privacy-focused streaming",
+    "ad-free cinema app",
+    "Trakt sync",
+    "Google Drive movie diary",
+    "no ads movie app",
     "streaming guide",
     "personal watchlist",
     "smart streaming",
@@ -31,6 +36,11 @@ export const metadata: Metadata = {
     "Ad-free app",
     "privacy-focused app",
     "premium app",
+    "AI curated streaming",
+    "AI recommendations",
+    "LA Curations Theater",
+    "movie tracker",
+
   ],
   alternates: {
     canonical: "https://theater.lacurations.co.in",
@@ -42,24 +52,24 @@ export const metadata: Metadata = {
     shortcut: "/assets/images/theater/theater64.png",
   },
   openGraph: {
-    title: "Theater App - Available Now on Google Play",
+    title: "Theater | AI Movie & TV Tracker | Free Movies & Live TV",
     description:
-      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Now live on the Google Play Store! Experience the next level of streaming with Theater App. AI-curated content just for you.",
+      "All-in-one cinema ecosystem: Live IPTV streaming with TV dial zapping, curated free movies & vertical reels, and AI-powered watch tracking. No accounts, no ads, zero tracking.",
     url: "https://theater.lacurations.co.in",
     images: [
       {
         url: "https://lacurations.co.in/assets/images/theater/theater-og-image.png",
         width: 1200,
         height: 630,
-        alt: "Theater App - Available Now on Google Play",
+        alt: "Theater | AI Movie & TV Tracker | Free Movies & Live TV",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Theater App - Available Now on Google Play",
+    title: "Theater | AI Movie & TV Tracker | Free Movies & Live TV",
     description:
-      "The Ultimate AI-Powered ad-free Movie & TV Tracker. Now live on the Google Play Store! Experience the next level of streaming with Theater App. AI-curated content just for you.",
+      "All-in-one cinema ecosystem: Live IPTV streaming, curated free movies & reels, and AI-powered watch tracking. No accounts, no ads, zero tracking.",
     site: "@lacurations",
     creator: "@lacurations",
     images: [
@@ -82,11 +92,11 @@ export default function Theater() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "Theater",
-    operatingSystem: "Android (Mobile, Tablet, TV), iOS",
+    operatingSystem: "Android (Mobile, Tablet, TV)",
     applicationCategory: "EntertainmentApplication",
-    applicationSubCategory: "Movie & TV Tracker",
+    applicationSubCategory: "Entertainment",
     featureList:
-      "AI Search Mode, Personalized Recommendations (My Next Watch), Cinema Chat, Theater AI Insights, Watchlist Analytics, AI Content Comparison, Advanced Dynamic Filters, Cinema Diary & History Tracker, Personal Cinematic HQ, Release Notifications, Poster Lab Social Sharing",
+      "AI Search Mode, Personalized Recommendations (My Next Watch), Cinema Chat, Theater AI Insights, Watchlist Analytics, AI Content Comparison, Advanced Dynamic Filters, Cinema Diary & History Tracker, Personal Cinematic HQ, Release Notifications, Poster Lab Social Sharing, Live IPTV Streaming, Interactive TV Channel Dial, Curated Free Full-Length Movies, Cinematic Reels Video Feed",
     screenshot:
       "https://lacurations.co.in/assets/images/theater/theater-og-image.png",
     offers: {
@@ -138,11 +148,12 @@ export default function Theater() {
     name: "Leo Antony",
     jobTitle: "Software Engineer",
     description: "Software Engineer and Founder of LA Curations.",
-    url: "https://lacurations.co.in",
+    url: "https://linkedin.com/in/leo-antony",
     sameAs: [
       "https://instagram.com/leoantony2002",
       "https://linkedin.com/in/leo-antony",
       "https://www.facebook.com/leoantony2002",
+      "mailto:leoantony20025@gmail.com",
     ],
   };
 
@@ -188,13 +199,13 @@ export default function Theater() {
       <link rel="me" href="https://instagram.com/leoantony2002" />
       <Image
         src="/assets/images/theater/theater512.png"
-        alt="Personalized Cinema Companion"
+        alt="Theater: Your Personal Cinema Companion"
         width={70}
         height={70}
         className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px] object-contain absolute top-8 left-8 z-10"
         priority
       />
-      <main className="relative overflow-x-hidden bg-[#000013]">
+      <main className="relative overflow-x-clip bg-[#000013]">
         <Hero />
         <StartWatching />
         <div className="sr-only">
@@ -204,9 +215,7 @@ export default function Theater() {
             based on your unique taste and mood.
           </p>
         </div>
-        <PersonalizedCinemaCompanion />
-        <AIFeatures />
-        <MoreFeatures />
+        <ModeSwitcherSection />
         <MultiDeviceExperience />
         <TheaterFAQ />
         <ExperienceTheaterNow />

@@ -18,8 +18,8 @@ body {
   scrollbar-width: none;
   /* IE 10+ */
   -ms-overflow-style: none;
-  /* Prevent horizontal scrollbar globally */
-  overflow-x: hidden;
+  /* Prevent horizontal scrollbar globally without breaking sticky */
+  overflow-x: clip;
   /* Smooth scroll for in-page navigation */
   scroll-behavior: smooth;
 }

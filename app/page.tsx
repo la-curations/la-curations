@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://lacurations.co.in"),
   title: "LA Curations - Curated for you",
   description:
-    "LA Curations is an independent studio crafting premium, privacy-focused mobile apps. Experience ad-free apps like 'Theater' designed with a clean UI/UX and zero data collection.",
+    "LA Curations is an independent software studio crafting premium, privacy-focused mobile apps. Discover Theater, the all-in-one entertainment SuperApp combining AI tracking, free streaming movies & reels, and live IPTV TV.",
   keywords: [
     "LA Curations",
     "Theater",
@@ -21,11 +21,12 @@ export const metadata: Metadata = {
     "software studio",
     "premium apps",
     "Privacy focused apps",
-    "Ad-free cinema guide",
-    "productivity tools",
+    "Live TV App",
+    "IPTV Player",
+    "Free movie streaming",
+    "Cinema reels",
     "Movie Tracker",
     "TV Show Tracker",
-    "AI Streaming Guide",
     "No ads movie app",
   ],
   alternates: {
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LA Curations",
     description:
-      "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
+      "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design. Discover Theater, the entertainment SuperApp.",
     url: "https://lacurations.co.in",
     siteName: "LA Curations",
     locale: "en_US",
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LA Curations",
     description:
-      "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design.",
+      "Beautifully crafted, ad-free mobile experiences. No tracking, Just pure design. Discover Theater, the entertainment SuperApp.",
     site: "@lacurations",
     creator: "@lacurations",
     images: ["https://lacurations.co.in/assets/images/LA/la-og-image.png"],
@@ -63,12 +64,16 @@ export const metadata: Metadata = {
 export default function Home() {
   const faqs = [
     {
-      q: "Is Theater free?",
-      a: "Theater is a permanently free, ad-free experience. There are no trackers, no hidden fees, and no data collection—ever.",
+      q: "What is the Theater App?",
+      a: "Theater is an all-in-one entertainment mobile app uniting AI discovery and personal watch tracking, curated free full-length movie streaming and cinematic reels, and live IPTV television streaming with TV dial zapping.",
+    },
+    {
+      q: "Is Theater free and ad-free?",
+      a: "Theater is a permanently free, ad-free experience. There are zero ads, zero trackers, no subscription paywalls, and zero data collection—ever.",
     },
     {
       q: "Which platforms is the Theater App on?",
-      a: "Theater is available on Android with universal support for Mobile, Tablet, and TV. An iOS version is currently in development.",
+      a: "Theater is available on Android with universal, fluid optimization for smartphones, foldables, tablets, and Android TV. An iOS version is currently in development.",
     },
     {
       q: "Is LA Curations a team or individual?",

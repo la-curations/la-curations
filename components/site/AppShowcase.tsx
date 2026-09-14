@@ -35,7 +35,7 @@ const AppShowcase = () => {
           alt="Curve"
           className="absolute -top-px w-[calc(100%-40px)] lg:w-[calc(100%-80px)] object-contain"
         />
-        <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full">
+        <div className="w-full flex flex-col gap-6 text-center items-center justify-center h-full px-4">
           <Image
             src="/assets/images/theater/theater-title.webp"
             alt="Theater by LA Curations"
@@ -43,6 +43,20 @@ const AppShowcase = () => {
             height={200}
             className="object-contain w-[70%] lg:w-[50%]"
           />
+          <p className="text-sm md:text-base lg:text-lg text-white/70 font-light max-w-xl">
+            The privacy-first entertainment SuperApp uniting AI watch tracking, curated free movie streaming, and live IPTV television.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <span className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-xs font-semibold text-white/90">
+              🎬 Theater AI
+            </span>
+            <span className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-xs font-semibold text-white/90">
+              🍿 Free Movies & Reels
+            </span>
+            <span className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10 text-xs font-semibold text-white/90">
+              📺 Live IPTV TV
+            </span>
+          </div>
         </div>
         <img
           src="/assets/images/LA/curve.webp"
