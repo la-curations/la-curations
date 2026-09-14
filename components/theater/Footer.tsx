@@ -26,7 +26,7 @@ const Footer = () => {
             <span>|</span>
             <Link
               href="/guide"
-              className="hover:text-white transition-colors text-[#FF5E87] font-medium"
+              className="hover:text-white/80 transition-colors"
             >
               User Guide
             </Link>
